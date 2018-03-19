@@ -1,0 +1,556 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.clear-fix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1170px;
+}
+
+body{
+    font-family: "HelveticaNeue", sans-serif;
+}
+
+/* HEADER */
+
+.main-section{
+    background-image: url("../img/main.png");
+    padding-bottom: 175px;
+    margin-bottom: 103px;
+}
+
+.menu-block{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 30px;
+    position: relative;
+    margin-bottom: 108px;
+}
+
+.menu-block .lang{
+    position: absolute;
+    right: 1px;
+}
+
+
+.menu-block nav ul{
+    display: flex;
+    flex-direction: row;
+    padding-left: 60px;
+}
+
+.menu-block nav ul li{
+    padding-left: 50px;
+    font-family: "HelveticaNeueCondensedBlack", sans-serif;
+    font-size: 21px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: condensed;
+    line-height: normal;
+    letter-spacing: 0.8px;
+}
+
+.menu-block nav ul li a{
+    color: #fff;
+}
+
+.logo a{
+    font-family: "LatoBlack", sans-serif;
+    font-size: 34px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 2.3px;
+    text-align: left;
+    color: #f8c51c;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+}
+
+.logo a span{
+    color: #fff;
+}
+
+/* ^HEADER  */
+
+/* MAIN SECTION CONTENT */
+
+.timer{
+    float: left;
+    max-width: 551px;
+    width: 100%;
+}
+
+.timer h2{
+    padding-left: 3px;
+    margin-bottom: 15px;
+    font-family: "HelveticaNeueCondensedBlack", sans-serif;
+    font-size: 21px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: condensed;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #f8c51c;
+    max-width: 191px;
+    width: 100%;
+}
+
+
+
+.timer h3{
+    font-family: "HelveticaNeueCondensedBlack", sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: condensed;
+    line-height: 0.78;
+    letter-spacing: 2.7px;
+    text-align: left;
+    color: #f8c51c;
+    text-transform: uppercase;
+    margin-bottom: 120px;
+}
+
+.timer h3 span{
+    text-transform: lowercase;
+    color: #ffffff;
+}
+
+.timer p{
+    font-size: 25px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.92;
+    letter-spacing: -1.3px;
+    text-align: left;
+    color: #ffffff;
+    text-transform: lowercase;
+    margin-bottom: 40px;
+}
+
+.timer p span{
+    display: inline-block;
+    margin-top: 12px;
+    font-family: "HelveticaNeueBold", sans-serif;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.92;
+    letter-spacing: -1.3px;
+    text-align: left;
+    color: #f8c51c;
+}
+
+.timer a{
+    font-family: "HelveticaNeueBold", sans-serif;
+    text-transform: uppercase;
+    border: 1px solid #f8c51c;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 17px;
+}
+
+ .registration-box{
+    margin-right: 5px;
+    padding: 15px 12px;
+    background-color: #f8c51c;
+    font-family: "HelveticaNeueBold", sans-serif;
+    text-transform: uppercase;
+    border: 1px solid #f8c51c;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 17px;
+}
+
+.timer .alert-box{
+    padding: 15px 7px;
+}
+
+.timer .alert-box:hover{
+    background-color: #f8c51c;
+    transition-duration: 0.3s;
+}
+
+
+
+.registration{
+    float: right;
+    width: 100%;
+    max-width: 359px;
+    height: 381px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    margin-top: -10px;
+    margin-right: 82px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+
+}
+
+.registration header{
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    padding-top: 18px;
+    padding-bottom: 6px;
+    position: relative;
+}
+
+.registration header .bonus-img{
+    position: absolute;
+    right: -48px;
+    bottom: -65px;
+}
+
+.registration header h2{
+    font-family: "HelveticaNeueCondensedBold", sans-serif;
+    font-size: 31px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: condensed;
+    line-height: normal;
+    letter-spacing: -0.4px;
+    text-align: left;
+    color: #f8c51c;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+}
+
+.registration header h2 span{
+    padding-left: 21px;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: condensed;
+    line-height: normal;
+    letter-spacing: -0.3px;
+    text-align: left;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.registration form{
+    padding-top: 30px;
+    padding-left: 13px;
+}
+
+.registration form .email{
+    max-width: 315px;
+    width: 100%;
+    height: 38px;
+    border-radius: 3px;
+    background-color: #f3f3f3;
+    border: solid 1px #dbdbdb;
+    font-family: "HelveticaNeueLight", sans-serif;
+    margin-bottom: 13px;
+    padding-left: 11px;
+}
+
+.registration form .cellphone{
+    padding-left: 11px;
+    max-width: 315px;
+    width: 100%;
+    height: 38px;
+    border-radius: 3px;
+    background-color: #f3f3f3;
+    border: solid 1px #dbdbdb;
+    font-family: "HelveticaNeueLight", sans-serif;
+    margin-bottom: 12px;
+}
+
+.registration form label{
+    font-family: "HelveticaNeueLight", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #8f8f8f;
+    padding-left: 28px;
+    cursor: pointer;
+}
+
+.registration form #accept{
+    display: none;
+}
+
+.registration form .registration-submit{
+    margin: 40px 50px;
+    padding: 15px 12px;
+    background-color: #f8c51c;
+    text-transform: uppercase;
+    border: 1px solid #f8c51c;
+    color: #000;
+    border-radius: 3px;
+    font-size: 17px;
+    font-family: "HelveticaNeueBold", sans-serif;
+    cursor: pointer;
+}
+
+.down{
+    position: absolute;
+    left: 50%;
+    transform: translate(-46%, 87%);
+}
+
+/* ^MAIN SECTION CONTENT */
+
+.how-it-works{
+    text-align: center;
+    position: relative;
+    padding-bottom: 80px;
+}
+
+.how-it-works .gold-line{
+    display: block;
+    border-width: 2px;
+    margin-bottom: -78px;
+
+}
+
+.how-it-works h2{
+    font-family: "HelveticaNeueCondensedBlack", sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: condensed;
+    line-height: 0.78;
+    letter-spacing: 2.7px;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 126px;
+}
+
+.how-it-works-img{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.how-it-works-img h3{
+    font-family: "HelveticaNeueCondensedBlack", sans-serif;
+}
+
+.save-money{
+    background-image: linear-gradient(256deg, #494949, #232323);
+    background-image: linear-gradient(256deg, #494949, #232323);
+    padding-bottom: 20px;
+}
+
+.save-money .save-money-box .save-money-discription{
+    float: left;
+    width: 100%;
+    max-width: 556px;
+    margin-top: 91px;
+    position: relative;
+}
+
+.save-money .save-money-box .save-money-discription .bg-number{
+    position: absolute;
+    opacity: 0.05;
+    font-family: "HelveticaNeueBold", sans-serif;
+    font-size: 250px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #adadad;
+    top: 50px;
+    left: -140px;
+}
+
+.save-money .save-money-box .save-money-discription h2{
+    position: relative;
+    font-family: "HelveticaNeueCondensedBold", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: condensed;
+    line-height: normal;
+    letter-spacing: 2.7px;
+    text-align: left;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.save-money .save-money-box .save-money-discription h2 span{
+    color: #f8c51c;
+}
+
+.save-money .save-money-box .save-money-discription p{
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.35;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    position: relative;
+}
+
+
+.save-money .save-money-box .save-money-hand{
+    float: right;
+    margin-right: 130px;
+}
+
+.save-money .save-money-box .save-money-hand .save-money-hand-container img{
+    width: 355px;
+}
+
+.tovxin-pc{
+    padding-top: 80px;
+    padding-bottom: 90px;
+}
+
+.tovxin-pc-box .tovxin-pc-img{
+    float: left;
+    margin-right: 36px;
+}
+
+.tovxin-pc-box .tovxin-pc-img img{
+    max-width: 450px;
+    max-height: 349px;
+}
+
+.tovxin-pc-box .tovxin-pc-article{
+    float: right;
+    max-width: 652px;
+}
+
+.tovxin-pc-box .tovxin-pc-article h2{
+    font-family: "LatoBlack", sans-serif;
+    font-size: 34px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 2.3px;
+    text-align: left;
+    color: #333333;
+    border-left: 4px solid #f8c51c;
+    padding-left: 9px;
+    margin-bottom: 30px;
+}
+
+.tovxin-pc-box .tovxin-pc-article p{
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.45;
+    letter-spacing: 0.9px;
+    text-align: left;
+    color: #333333;
+    margin-bottom: 50px;
+}
+
+
+.support{
+    background-image: linear-gradient(256deg, #494949, #232323);
+    background-image: linear-gradient(256deg, #494949, #232323);
+}
+
+.support .support-box{
+    position: relative;
+}
+
+.support .support-box .calendar{
+    text-align: center;
+    float: left;
+    position: absolute;
+    z-index: 2;
+    max-width: 655px;
+    background-color: #fff;
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+}
+
+.support .support-box .calendar img{
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.support .support-box .calendar h3{
+    font-size: 20px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: condensed;
+    line-height: normal;
+    letter-spacing: 0.9px;
+    text-align: center;
+    color: #333333;
+    font-family: "HelveticaNeueCondensedBlack", sans-serif;
+    margin-bottom: 15px;
+}
+
+.support .support-box .calendar-description{
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.45;
+    letter-spacing: 0.9px;
+    text-align: center;
+    color: #333333;
+}
+
+.support .support-box .calendar-girl{
+    float: right;
+    z-index: 1;
+}
+/* ПОЛОСКА ?*/
+.text-calendar{
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.text-calendar:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    height: 2px;
+    width: 269px;
+    background-color: #f8c51c;
+}
+
