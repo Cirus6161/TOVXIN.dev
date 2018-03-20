@@ -118,7 +118,7 @@ body{
     color: #ffffff;
     text-transform: uppercase;
     background-color: #f8c51c;
-    max-width: 191px;
+    min-width: 191px;
     width: 36%;
 }
 
