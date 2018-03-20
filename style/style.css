@@ -488,6 +488,9 @@ body{
 
 .support .support-box{
     position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 55px;
 }
 
 .support .support-box .calendar{
@@ -501,6 +504,8 @@ body{
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 50px;
+    bottom: 80px;
+    left: 40px;
 }
 
 .support .support-box .calendar img{
