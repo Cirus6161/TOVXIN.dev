@@ -7,6 +7,7 @@
     <link href="style/style.css" rel="stylesheet">
     <link href="fonts/fonts.css" rel="stylesheet">
     <link href="style/normalize.css" rel="stylesheet">
+    <link href="style/media.css" rel="stylesheet">
     <title>TOVXIN</title>
 </head>
 <body>
@@ -31,30 +32,32 @@
             </div>
         </header>
         <div class="main-section-content container clear-fix">
-            <div class="timer">
-                <h2>успей заработать</h2>
-                <h3>Биржа криптовалют<br><span>открытие:</span></h3>
-                <div class="timer-script">
-                    <script src="http://megatimer.ru/s/d427d058323a21ad0f00457f6e6e286a.js"></script>
+            <div class="row">
+                <div class="timer col">
+                    <h2>успей заработать</h2>
+                    <h3>Биржа криптовалют<br><span>открытие:</span></h3>
+                    <div class="timer-script">
+                        <script src="http://megatimer.ru/s/d427d058323a21ad0f00457f6e6e286a.js"></script>
+                    </div>
+                    <p>СОВСЕМ СКОРО МЫ ЗАПУСКАЕМ БИРЖУ КРИПТОВАЛЮТ
+                        УСПЕЙ ЗАРЕГИСРИРОВАТЬСЯ ПЕРВЫМ И ПОЛУЧАЙ <br>
+                        <span>Приятные бонусы</span>
+                    </p>
+                    <a href="index.html" class="registration-box">Зарегистрироваться</a>
+                    <a href="index.html" class="alert-box">Сообщить об открытии</a>
                 </div>
-                <p>СОВСЕМ СКОРО МЫ ЗАПУСКАЕМ БИРЖУ КРИПТОВАЛЮТ
-                    УСПЕЙ ЗАРЕГИСРИРОВАТЬСЯ ПЕРВЫМ И ПОЛУЧАЙ <br>
-                    <span>Приятные бонусы</span>
-                </p>
-                <a href="index.html" class="registration-box">Зарегистрироваться</a>
-                <a href="index.html" class="alert-box">Сообщить об открытии</a>
-            </div>
-            <div class="registration">
-                <header>
-                    <h2>Зарегистрируся сейчас<br><span>и участвуй в розыгрыше</span></h2>
-                    <img src="img/group-21.png" class="bonus-img">
-                </header>
-                <form action="" method="">
-                    <input type="email" placeholder="Email"  class="email">
-                    <input type="number" placeholder="Телефон"  class="cellphone"><br>
-                    <input type="checkbox" id="accept"><label for="accept">Согласие на сбор и обработку личных данных</label>
-                    <input type="submit" value="Зарегистрироваться" class="registration-submit">
-                </form>
+                <div class="registration col">
+                    <header>
+                        <h2>Зарегистрируся сейчас<br><span>и участвуй в розыгрыше</span></h2>
+                        <img src="img/group-21.png" class="bonus-img">
+                    </header>
+                    <form action="" method="">
+                        <input type="email" placeholder="Email"  class="email">
+                        <input type="number" placeholder="Телефон"  class="cellphone"><br>
+                        <input type="checkbox" id="accept"><label for="accept">Согласие на сбор и обработку личных данных</label>
+                        <input type="submit" value="Зарегистрироваться" class="registration-submit">
+                    </form>
+                </div>
             </div>
         </div>
         <a href="" class="down"><img src="img/down.png"></a>
@@ -188,4 +191,8 @@
 </body>
 </html>
 
-
+<!--
+1.Убрать <p>
+2.Задать падинги в контейнере
+3.Задать ширину в контейнере
+-->

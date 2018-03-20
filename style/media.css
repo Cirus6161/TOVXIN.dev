@@ -1,0 +1,29 @@
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 720px;
+    }
+}
+
+@media screen and (max-width: 768px ) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: ) {
+
+}
+
+@media screen and (max-width: ) {
+
+}
+
+@media screen and (max-width: ) {
+
+}

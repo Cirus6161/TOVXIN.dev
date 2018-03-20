@@ -26,7 +26,30 @@ input[type=number]::-webkit-outer-spin-button {
 .container{
     margin-left: auto;
     margin-right: auto;
-    max-width: 1136px;
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+.row{
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col{
+    min-height: 1px;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+
 }
 
 body{
@@ -101,8 +124,7 @@ body{
 
 .timer{
     float: left;
-    min-width: 551px;
-    width: 50%;
+    width: 68%;
 }
 
 .timer h2{
@@ -205,15 +227,15 @@ body{
 
 
 .registration{
-    float: right;
+    float: left;
     width: 32%;
-    min-width: 350px;
+   /* min-width: 350px; */
     height: 381px;
     border-radius: 3px;
     background-color: #ffffff;
     margin-top: -10px;
-    margin-right: 82px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+
 
 }
 
