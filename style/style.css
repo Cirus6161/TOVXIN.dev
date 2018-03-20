@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -14,6 +15,8 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0;
 }
 
+
+
 .clear-fix:after {
     content: "";
     display: table;
@@ -23,8 +26,7 @@ input[type=number]::-webkit-outer-spin-button {
 .container{
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
-    max-width: 1170px;
+    max-width: 1136px;
 }
 
 body{
@@ -35,7 +37,7 @@ body{
 
 .main-section{
     background-image: url("../img/main.png");
-    padding-bottom: 175px;
+    padding-bottom: 166px;
     margin-bottom: 103px;
 }
 
@@ -99,8 +101,8 @@ body{
 
 .timer{
     float: left;
-    max-width: 551px;
-    width: 100%;
+    min-width: 551px;
+    width: 50%;
 }
 
 .timer h2{
@@ -117,7 +119,7 @@ body{
     text-transform: uppercase;
     background-color: #f8c51c;
     max-width: 191px;
-    width: 100%;
+    width: 36%;
 }
 
 
@@ -133,7 +135,7 @@ body{
     text-align: left;
     color: #f8c51c;
     text-transform: uppercase;
-    margin-bottom: 120px;
+    margin-bottom: 25px;
 }
 
 .timer h3 span{
@@ -152,6 +154,7 @@ body{
     color: #ffffff;
     text-transform: lowercase;
     margin-bottom: 40px;
+    margin-top: 30px;
 }
 
 .timer p span{
@@ -203,8 +206,8 @@ body{
 
 .registration{
     float: right;
-    width: 100%;
-    max-width: 359px;
+    width: 32%;
+    min-width: 350px;
     height: 381px;
     border-radius: 3px;
     background-color: #ffffff;
@@ -229,6 +232,7 @@ body{
     position: absolute;
     right: -48px;
     bottom: -65px;
+    z-index: 5;
 }
 
 .registration header h2{
@@ -261,10 +265,11 @@ body{
 .registration form{
     padding-top: 30px;
     padding-left: 13px;
+    padding-right: 13px;
+    position: relative;
 }
 
 .registration form .email{
-    max-width: 315px;
     width: 100%;
     height: 38px;
     border-radius: 3px;
@@ -277,7 +282,6 @@ body{
 
 .registration form .cellphone{
     padding-left: 11px;
-    max-width: 315px;
     width: 100%;
     height: 38px;
     border-radius: 3px;
@@ -297,8 +301,36 @@ body{
     letter-spacing: 1px;
     text-align: left;
     color: #8f8f8f;
-    padding-left: 28px;
+    padding-left: 25px;
     cursor: pointer;
+    position: relative;
+    line-height: 25px;
+
+}
+
+.registration form label::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #dbdbdb;
+    background-color: #f3f3f3;
+    border-radius: 2px;
+}
+
+.registration form #accept:checked + label::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 10px;
+    height: 10px;
+    background-color: #f8c51c;
+    border-radius: 2px;
 }
 
 .registration form #accept{
@@ -306,7 +338,7 @@ body{
 }
 
 .registration form .registration-submit{
-    margin: 40px 50px;
+    position: absolute;
     padding: 15px 12px;
     background-color: #f8c51c;
     text-transform: uppercase;
@@ -316,6 +348,9 @@ body{
     font-size: 17px;
     font-family: "HelveticaNeueBold", sans-serif;
     cursor: pointer;
+    left: 50%;
+
+    transform: translate(-50%, 120%);
 }
 
 .down{
@@ -441,6 +476,7 @@ body{
 .tovxin-pc-box .tovxin-pc-img{
     float: left;
     margin-right: 36px;
+    width: 39%;
 }
 
 .tovxin-pc-box .tovxin-pc-img img{
@@ -450,7 +486,7 @@ body{
 
 .tovxin-pc-box .tovxin-pc-article{
     float: right;
-    max-width: 652px;
+    max-width: 57%;
 }
 
 .tovxin-pc-box .tovxin-pc-article h2{
@@ -703,4 +739,24 @@ body{
     letter-spacing: 2.6px;
     text-align: center;
     color: #ffffff;
+}
+
+#timerd427d058323a21ad0f00457f6e6e286a{
+    text-align: left !important;
+}
+
+#timer-text-d427d058323a21ad0f00457f6e6e286a-days{
+    text-align: center;
+}
+
+#timer-text-d427d058323a21ad0f00457f6e6e286a-hours{
+    text-align: center;
+}
+
+#timer-text-d427d058323a21ad0f00457f6e6e286a-minutes{
+    text-align: center;
+}
+
+#timer-text-d427d058323a21ad0f00457f6e6e286a-secundes{
+    text-align: center;
 }
