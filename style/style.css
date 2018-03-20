@@ -559,3 +559,90 @@ body{
     background-color: #f8c51c;
 }
 
+.advantages-box {
+    text-align: center;
+    padding-top: 80px;
+}
+
+.advantages-box h2{
+    font-family: "HelveticaNeueCondensedBlack", sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: condensed;
+    line-height: normal;
+    letter-spacing: 1.8px;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 55px;
+}
+
+.advantages-box .adv-items .adv-flex-section1{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1170px;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.advantages-box .adv-items  .adv-item{
+    width: 33%;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 52px;
+}
+
+.advantages-box .adv-items .adv-item h3{
+    font-family: "HelveticaNeueCondensedBlack", sans-serif;
+    font-size: 17px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: condensed;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    text-align: center;
+    color: #333333;
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
+
+.advantages-box .adv-items .adv-item .adv-item-text{
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.7px;
+    text-align: center;
+    color: #333333;
+    font-family: "HelveticaNeue", sans-serif;
+}
+
+.advantages-box .adv-items .adv-item:after{
+    content: "";
+    position: absolute;
+    bottom: 245px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #d9d9d9;
+}
+
+.advantages-box .adv-items .adv-item:first-child{
+    border-right: 1px solid #d9d9d9;
+}
+
+.advantages-box .adv-items .adv-item:nth-child(3){
+    border-left: 1px solid #d9d9d9;
+}
+
+.advantages-box .adv-items .adv-item:nth-child(4){
+    border-right: 1px solid #d9d9d9;
+}
+
+.advantages-box .adv-items .adv-item:last-child{
+    border-left: 1px solid #d9d9d9;
+}
