@@ -138,6 +138,7 @@ body{
 
 .header-content-block{
     display: flex;
+    justify-content: space-between;
 }
 
 .h1{
@@ -241,9 +242,11 @@ body{
     border-radius: 3px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    padding-left: 12px;
-    padding-right: 12px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 18px;
+    padding-bottom: 11px;
 }
 
 .reg-col header h1{
@@ -271,18 +274,49 @@ body{
     text-align: left;
     color: #ffffff;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    padding-left: 25px;
 }
 
 .reg-col form{
     background-color: #fff;
     padding-left: 12px;
     padding-right: 12px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#accept{
+    display: none;
+}
+
+.reg-col form .footer-form{
+    text-align: center;
 }
 
 .reg-col form .email{
     width: 100%;
+    border-radius: 3px;
+    background-color: #f3f3f3;
+    border: solid 1px #dbdbdb;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 12px;
+    margin-bottom: 15px;
 }
 
 .reg-col form .cellphone{
     width: 100%;
+    border-radius: 3px;
+    background-color: #f3f3f3;
+    border: solid 1px #dbdbdb;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 12px;
+    margin-bottom: 15px;
+}
+
+.submit-button{
+    color: #000;
+    margin-top: 40px;
+    cursor: pointer;
 }
