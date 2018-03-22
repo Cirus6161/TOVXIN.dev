@@ -1,12 +1,12 @@
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .container {
-        width: 960px;
+        width: 1170px;
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
     .container {
-        width: 720px;
+        width: 960px;
     }
 }
 
@@ -16,14 +16,3 @@
     }
 }
 
-@media screen and (max-width: ) {
-
-}
-
-@media screen and (max-width: ) {
-
-}
-
-@media screen and (max-width: ) {
-
-}
