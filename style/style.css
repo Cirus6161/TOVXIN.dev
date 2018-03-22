@@ -170,6 +170,10 @@ body{
     margin-right: 9px;
 }
 
+.timer{
+    width: 40%;
+}
+
 .timer h1{
     font-family: "HelveticaNeueCondensedBlack";
     font-size: 40px;
@@ -244,7 +248,6 @@ body{
 
 .reg-col .form-header{
     background-color: #333;
-    border-radius: 3px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     text-align: center;
@@ -291,9 +294,6 @@ body{
 
 .reg-col form{
     background-color: #fff;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 30px;
     padding-bottom: 30px;
     border-radius: 3px;
     border-top-left-radius: 0;
@@ -424,7 +424,7 @@ body{
 }
 
 .how-it-works-h2 h2{
-    font-family: "HelveticaNeueCondensedBlack";
+    font-family: "HelveticaNeueCondensedBlack", sans-serif;
     font-size: 40px;
     font-weight: 900;
     font-style: normal;
@@ -467,6 +467,15 @@ body{
     z-index: 10;
 }
 
+.form-body{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
 .intro-reg-form{
-    width: 20%;
+    border-radius: 3px;
+}
+
+.reg-col{
+    width: 50%;
 }
