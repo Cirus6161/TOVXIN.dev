@@ -673,6 +673,7 @@ body{
 /*6th-Section*/
 .advantages-section{
     padding-top: 80px;
+    padding-bottom: 90px;
 }
 
 .advantages-section .adv-flex-row h2{
@@ -738,4 +739,66 @@ body{
 
 .adv-item-row .adv-item .adv-item-text{
     margin-bottom: 24px;
+}
+
+.footer-section{
+    background-image: url("../img/footer.png");
+    background-size: cover;
+    padding-bottom: 90px;
+}
+
+.footer-sec-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-sec-flex h2{
+    font-family: "HelveticaNeueCondensedBlack", sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: condensed;
+    line-height: 0.78;
+    letter-spacing: 2.7px;
+    text-align: center;
+    color: #f8c51c;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.footer-sec-flex .text-footer{
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.03;
+    letter-spacing: 0.3px;
+    text-align: center;
+    color: #ffffff;
+}
+
+footer{
+    background-color: #333333;
+    border-top: 1px solid #fff;
+}
+
+.footer-col{
+    float: none;
+}
+
+.footer-col h3{
+    text-align: center;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 2.6px;
+    color: #ffffff;
 }
