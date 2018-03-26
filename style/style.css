@@ -802,6 +802,10 @@ footer{
     color: #ffffff;
 }
 
+ /*MODAL-WINDOWS*/
+
+
+
 .reg-modal{
     display: none;
 }
@@ -928,6 +932,19 @@ footer{
 }
 
 
+.form-body-modal #alert-modal:checked + label::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 10px;
+    height: 10px;
+    background-color: #f8c51c;
+    border-radius: 2px;
+}
+
+
 .reg-modal-success{
     width: 361px;
     border-radius: 3px;
@@ -978,6 +995,15 @@ footer{
 
 .footer-form-modal{
     text-align: center;
+}
+
+.alert-modal{
+    display: none;
+}
+
+
+#alert-modal{
+    display: none;
 }
 
 
