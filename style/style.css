@@ -71,6 +71,7 @@ body{
 
 .header-section{
     background-image: url("../img/main.png");
+    background-size: cover;
     padding-bottom: 146px;
 }
 
@@ -171,7 +172,7 @@ body{
 }
 
 .timer{
-    width: 40%;
+    flex-basis: 48%;
 }
 
 .timer h1{
@@ -468,6 +469,7 @@ body{
 }
 
 .form-body{
+    padding-top: 30px;
     padding-left: 12px;
     padding-right: 12px;
 }
@@ -477,5 +479,263 @@ body{
 }
 
 .reg-col{
-    width: 50%;
+    flex-basis: 34%;
+}
+
+/*3th SECTION*/
+
+.save-money-section{
+    background-image: linear-gradient(256deg, #494949, #232323);
+    padding-bottom: 60px;
+}
+
+.save-money-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.save-money-section .save-money-item1{
+    flex-basis: 51%;
+}
+
+.save-money-section .save-money-item1 h2{
+    font-family: "HelveticaNeueCondensedBold", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: condensed;
+    line-height: normal;
+    letter-spacing: 2.7px;
+    text-align: left;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.save-money-section .save-money-item1 h2 span{
+    color: #f8c51c;
+}
+
+.save-money-item1 .save-money-item-text{
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.35;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    position: relative;
+}
+
+.save-money-item1 .save-money-item-text:after{
+    content: "0,1%";
+    position: absolute;
+    font-family: "HelveticaNeueBold", sans-serif;
+    font-size: 250px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #adadad;
+    opacity: 0.05;
+    left: -144px;
+    bottom: -108px;
+}
+
+
+/*4th SECTION*/
+
+.tovxin-description-section{
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
+
+.tovxin-description-flex{
+    display: flex;
+    align-items: stretch;
+}
+
+.tovxin-desc-text-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.tovxin-desc-text-item .tovxin-desc-text{
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.45;
+    letter-spacing: 0.9px;
+    text-align: left;
+    color: #333333;
+}
+
+.tovxin-description-flex .tovxin-desc-text-item h2{
+    font-family: "LatoBlack", sans-serif;
+    font-size: 34px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 2.3px;
+    text-align: left;
+    color: #333333;
+    text-transform: uppercase;
+    border-left: 3px solid #f8c51c;
+    padding-left: 9px;
+}
+
+/*5th-SECTION*/
+
+.calendar-section{
+    background-image: linear-gradient(253deg, #494949, #232323);
+    padding-top: 107px;
+    padding-bottom: 81px;
+}
+
+.calendar-section .calendar-flex-row{
+    display: flex;
+}
+
+.calendar-flex-col{
+    position: relative;
+}
+
+.calendar-section .calendar-flex-row .calendar-flex-col .calendar-item1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    width: 58%;
+    padding-top: 25px;
+    padding-bottom: 73px;
+    padding-left: 25px;
+    padding-right: 25px;
+    position: relative;
+    z-index: 10;
+}
+
+.calendar-section .calendar-flex-row .calendar-flex-col .calendar-item2{
+    position: absolute;
+    top: -75px;
+    right: 128px;
+}
+
+.calendar-section .calendar-flex-row .calendar-flex-col h3{
+    font-family: "HelveticaNeueCondensedBlack", sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: condensed;
+    line-height: normal;
+    letter-spacing: 0.9px;
+    text-align: center;
+    color: #333333;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+
+
+.calendar-section .calendar-flex-row .calendar-flex-col .calendar-text{
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.45;
+    letter-spacing: 0.9px;
+    text-align: center;
+    color: #333333;
+    position: relative;
+}
+
+.calendar-section .calendar-flex-row .calendar-flex-col .calendar-text:after{
+    content: "";
+    background-color: #f8c51c;
+    height: 2px;
+    width: 30%;
+    position: absolute;
+    bottom: -30px;
+    width: 30%;
+    transform: translate(-50%, 0);
+    left: 50%;
+}
+
+/*6th-Section*/
+.advantages-section{
+    padding-top: 80px;
+}
+
+.advantages-section .adv-flex-row h2{
+    font-family: "HelveticaNeueCondensedBlack", sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: condensed;
+    line-height: normal;
+    letter-spacing: 1.8px;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 50px;
+}
+
+.adv-flex-row{
+    text-align: center;
+}
+
+
+.adv-item-row{
+    display: flex;
+    text-align: center;
+}
+
+.adv-item-row1{
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.adv-item-row1:after{
+    content: "";
+    height: 1px;
+    background-color: #d9d9d9;
+    position: absolute;
+    width: 100%;
+    bottom: -12%;
+}
+
+.adv-item-row .adv-item{
+    padding-left: 34px;
+    padding-right: 34px;
+    flex-basis: 34%;
+}
+
+.adv-item-row .adv-item1{
+    border-right: 1px solid #d9d9d9;
+}
+
+.adv-item-row .adv-item3{
+    border-left: 1px solid #d9d9d9;
+}
+
+
+
+.adv-item-row .adv-item img{
+    margin-bottom: 10px;
+}
+
+.adv-item-row .adv-item h3{
+    margin-bottom: 6px;
+}
+
+.adv-item-row .adv-item .adv-item-text{
+    margin-bottom: 24px;
 }
