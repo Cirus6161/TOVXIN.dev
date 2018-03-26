@@ -945,6 +945,13 @@ footer{
 }
 
 
+.alert-submit{
+    width: 234px;
+    height: 50px;
+    border-radius: 3px;
+    background-color: #f8c51c;
+}
+
 .reg-modal-success{
     width: 361px;
     border-radius: 3px;

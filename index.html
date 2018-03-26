@@ -56,23 +56,7 @@
                         </div>
 
 
-                        <div id="alert" class="alert-modal">
-                            <form action="" method="" class="intro-reg-form-modal" id="form1">
-                                <div class="form-header-modal">
-                                    <h1>Совсем скоро открытие! <br>
-                                        <span>Непропустите - заполните данные</span>
-                                    </h1>
-                                </div>
-                                <div class="form-body-modal">
-                                    <input type="email" placeholder="Email" class="email">
-                                    <input type="number" placeholder="Телефон" class="cellphone">
-                                    <input type="checkbox" id="alert-modal"><label for="alert-modal">Согласие на сбор и обработку личных данных</label>
-                                    <div class="footer-form-modal">
-                                        <input type="submit" class="submit-button button" value="Зарегистрироваться">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+
 
 
 
@@ -174,7 +158,7 @@
                         Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius.
                     </div>
                     <div class="tovxin-desc-reg">
-                        <a href="" class="registration-button button">Зарегистрироваться</a>
+                        <a href="#reg" class="registration-button button">Зарегистрироваться</a>
                     </div>
                 </div>
             </div>
@@ -267,7 +251,7 @@
                         - все это стоит регистрации.
                         Нулевой риск, и вы получаете торговую платформу, которая подходит для ваших сделок.</div>
                     <div>
-                        <a href="" class="submit-button button">зарегистрироваться</a>
+                        <a href="#reg" class="registration-button submit-button button">зарегистрироваться</a>
                     </div>
                 </div>
             </div>
@@ -298,11 +282,54 @@
             <input type="number" placeholder="Телефон" class="cellphone">
             <input type="checkbox" id="accept-modal"><label for="accept-modal">Согласие на сбор и обработку личных данных</label>
             <div class="footer-form-modal">
-                <input type="submit" class="submit-button button" value="Зарегистрироваться">
+                <a href="#reg-success" class="reg-thx">
+                    <input type="submit" class="submit-button button" value="Зарегистрироваться">
+                </a>
             </div>
         </div>
     </form>
 </div>
+
+<div id="alert" class="alert-modal">
+    <form action="" method="" class="intro-reg-form-modal" id="form1">
+        <div class="form-header-modal">
+            <h1>Совсем скоро открытие! <br>
+                <span>Непропустите - заполните данные</span>
+            </h1>
+        </div>
+        <div class="form-body-modal">
+            <input type="email" placeholder="Email" class="email">
+            <input type="number" placeholder="Телефон" class="cellphone">
+            <input type="checkbox" id="alert-modal"><label for="alert-modal">Согласие на сбор и обработку личных данных</label>
+            <div class="footer-form-modal">
+                <a href="#alert-success" class="alert">
+                    <input type="submit" class="submit-button alert-submit button" value="Дайте знать">
+                </a>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+<div id="alert-success" class="reg-modal-success">
+    <div>
+        <h2>Спасибо!</h2>
+        <div class="reg-success-text">
+            <p>Как только наша биржа заработает,
+                Вы получите уведомление!</p>
+            <p>До встречи на бирже!</p>
+            <div class="shutdown">
+                <a href="" class="submit-button modal-submit-button button">Закрыть</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
 
 <div id="reg-success" class="reg-modal-success">
     <div>
