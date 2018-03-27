@@ -1,7 +1,17 @@
-@media only screen and (min-width: 769px) {
+
+/*ПЛАНШЕТ*/
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
     .container {
         width: 720px;
     }
+
+    .nav-menu{
+        order: -1;
+        flex-grow: 1;
+        width: 30px;
+    }
+
+
 
     .nav-menu nav li{
         display: block;
@@ -12,17 +22,67 @@
         display: none;
     }
 
-    .nav-menu nav a{
-        border-bottom: 1px solid #000000;
+
+
+    .nav-menu nav ul li{
+        display: block;
     }
 
     .menu-trigger{
         display: block;
     }
 
+    .logo{
+        flex-grow: 1;
+        padding-right: 0px;
+    }
+
+    .reg-col{
+        display: none;
+    }
+
+    .timer{
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .timer h1{
+        text-align: center;
+    }
+
+    #timerd427d058323a21ad0f00457f6e6e286a{
+        text-align: center !important;
+    }
+
+    .timer .timer-text{
+        text-align: center;
+    }
+
+    .timer h2{
+        text-align: center;
+        transform: translateY(-100%);
+    }
+
+    .img-text{
+        font-size: 17px;
+    }
+
+    .save-money-item2{
+        flex-basis: 44%;
+    }
+
+    .save-money-item2{
+        img{
+
+        }
+    }
+
+
 }
 
-@media only screen and (min-width: 1024px) {
+/*Desktop*/
+
+@media only screen and (min-width: 1024px) and (max-width: 1199px){
     .container {
         width: 920px;
     }
