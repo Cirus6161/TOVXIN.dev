@@ -1,17 +1,55 @@
-@media screen and (min-width: 769px) {
+@media only screen and (min-width: 769px) {
     .container {
         width: 720px;
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
     .container {
         width: 920px;
     }
+
+    .reg-col .form-header h1{
+        font-size: 23px;
+    }
+
+    .reg-col .form-header h1 span{
+        font-size: 23px;
+        padding-left: 0;
+    }
+    .bonus{
+        bottom: -76px;
+        right: -56px;
+    }
+
+    .reg-col form .email{
+        font-size: 15px;
+    }
+
+    .reg-col form .cellphone{
+        font-size: 15px;
+    }
+
+    .reg-col form label{
+        font-size: 9px;
+    }
+
+    .submit-button{
+        font-size: 14px;
+    }
+    .h1{
+        font-size: 16px;
+    }
+
+    .timer h1{
+        font-size: 30px;
+    }
+
+
 }
 
 
-@media screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
     .container {
         width: 1170px;
     }
@@ -19,7 +57,7 @@
 
 
 
-@media screen and (max-width: 768px ) {
+@media only screen and (max-width: 768px ) {
     .container {
         width: 100%;
     }
