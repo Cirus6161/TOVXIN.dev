@@ -3,110 +3,22 @@
         width: 720px;
     }
 
-    .reg-col .form-header h1{
-        font-size: 23px;
+    .nav-menu nav li{
+        display: block;
+        text-align: center;
     }
 
-    .reg-col .form-header h1 span{
-        font-size: 23px;
-        padding-left: 0;
-    }
-    .bonus{
-        bottom: -76px;
-        right: -56px;
+    .nav-menu nav ul{
+        display: none;
     }
 
-    .reg-col form .email{
-        font-size: 15px;
+    .nav-menu nav a{
+        border-bottom: 1px solid #000000;
     }
 
-    .reg-col form .cellphone{
-        font-size: 15px;
+    .menu-trigger{
+        display: block;
     }
-
-    .reg-col form label{
-        font-size: 9px;
-    }
-
-    .submit-button{
-        font-size: 14px;
-    }
-    .h1{
-        font-size: 16px;
-    }
-
-    .timer h1{
-        font-size: 30px;
-    }
-
-    .timer .timer-text{
-        font-size: 20px;
-    }
-
-    .timer h2{
-        font-size: 20px;
-    }
-
-    .button{
-        font-size: 14px;
-    }
-
-    .save-money-section .save-money-item1 h2{
-        font-size: 30px;
-    }
-
-    .save-money-item1 .save-money-item-text{
-        font-size: 15px;
-    }
-
-    .tovxin-desc-text-item .tovxin-desc-text{
-        font-size: 15px;
-    }
-
-    .tovxin-description-flex .tovxin-desc-text-item h2{
-        font-size: 30px;
-    }
-
-    .save-money-item1 .save-money-item-text:after{
-        font-size: 150px;
-        left: -56px;
-        bottom: -104px;
-    }
-
-    .calendar-section .calendar-flex-row .calendar-flex-col h3{
-        font-size: 16px;
-    }
-
-    .calendar-section .calendar-flex-row .calendar-flex-col .calendar-text{
-        font-size: 16px;
-    }
-
-    .calendar-section .calendar-flex-row .calendar-flex-col .calendar-item2{
-        top: -76px;
-        right: 30px;
-    }
-
-    .calendar-item2 img{
-        height: 450px;
-    }
-
-    .adv-item-row .adv-item h3 {
-        font-size: 13px;
-    }
-
-    .adv-item-row .adv-item .adv-item-text{
-        font-size: 13px;
-    }
-
-    .footer-sec-flex h2{
-        font-size: 35px;
-    }
-
-    .footer-sec-flex .text-footer{
-        font-size: 25px;
-    }
-
-
 
 }
 

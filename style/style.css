@@ -106,6 +106,59 @@ body{
     justify-content: space-between;
 }
 
+
+
+
+
+
+
+
+.nav-menu nav {
+    width: 100%;
+}
+
+.nav-menu nav li{
+    display: inline-block;
+}
+
+.nav-menu nav a{
+    display: block;
+    text-decoration: none;
+}
+
+.nav-menu nav a:hover{
+    background-color: #e65540;
+}
+
+.menu-trigger{
+    text-align: center;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .nav-menu a{
     font-family: "HelveticaNeueCondensedBlack";
     font-size: 21px;
