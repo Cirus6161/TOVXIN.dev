@@ -147,7 +147,9 @@ body{
 
 
 
+.adv-item-inner{
 
+}
 
 
 
@@ -230,7 +232,7 @@ body{
     content: "";
     height: 18px;
     position: absolute;
-    right: -20px;
+    right: -6px;
     top: 6px;
     width: 16px;
     border-left: 1px solid #f8c51c;
@@ -827,14 +829,26 @@ body{
     margin-bottom: 50px;
 }
 
-.adv-item-row1:after{
-    content: "";
+.adv-item{
+
+}
+
+
+/*.adv-item-row1:after{
+    !*content: "";*!
     height: 1px;
     background-color: #d9d9d9;
     position: absolute;
     width: 100%;
     bottom: 55%;
-}
+}*/
+
+
+
+
+
+
+
 
 .adv-item-row .adv-item{
     padding-left: 34px;

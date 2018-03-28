@@ -1,8 +1,32 @@
 
+@media screen and (min-width: 1024px ) {
+    .adv-item-row .adv-item:nth-of-type(3n-1) .adv-item-inner{
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    }
+
+    .adv-item{
+        border-bottom: 1px solid black;
+    }
+
+
+}
+
+
+
 /*ПЛАНШЕТ*/
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .container {
         width: 720px;
+    }
+
+    .adv-item-row .adv-item:nth-of-type(odd){
+        border-right: 1px solid black;
+    }
+
+
+    .header-section{
+        background-image: url("../img/main-768.png");
     }
 
     .nav-menu{
@@ -124,9 +148,7 @@
     }
 
     .adv-item-row1:after{
-        bottom: 69%;
-        width: 110%;
-        transform: translate(-6%, 0);
+        display: none;
     }
 
     .img-index{
@@ -152,15 +174,7 @@
         border-right: 0;
     }
 
-    .adv-item-row .adv-item3:after{
-        content: "";
-        height: 1px;
-        background-color: #d9d9d9;
-        position: absolute;
-        width: 112%;
-        bottom: 36%;
-        transform: translate(-30%, 0);
-    }
+
 
     .adv-item-row .adv-item4{
         order: 2;
@@ -303,6 +317,9 @@
     .container {
         width: 1170px;
     }
+
+
+
 }
 
 
@@ -310,6 +327,11 @@
 @media only screen and (max-width: 767px ) {
     .container {
         width: 100%;
+    }
+
+
+    .header-section{
+        background-image: url("../img/main-320.png");
     }
 
     .nav-menu{
@@ -379,7 +401,13 @@
         display: none;
     }
 
+    .how-it-works-h2 h2{
+        font-size: 20px;
+    }
 
+    .img-box img{
+        margin-bottom: 11px;
+    }
 
     .img-index:after{
         content: "";
@@ -387,7 +415,16 @@
         height: 37px;
         background-color: #f8c51c;
         position: absolute;
+        left: 50%;
     }
+
+
+
+    .img-box{
+        margin-bottom: 12px;
+    }
+
+
 
     .img-item-mg{
         margin: 0;
@@ -401,7 +438,7 @@
     }
 
     .img-text{
-        font-size: 17px;
+        font-size: 20px;
     }
 
     .save-money-item2{
@@ -469,6 +506,7 @@
     .img-index{
         padding-left: 0;
         padding-right: 0;
+        margin-bottom: 50px;
     }
 
     .adv-item-row .adv-item3{
