@@ -34,7 +34,9 @@
         width: 720px;
     }
 
-    .adv-item-row .adv-item:nth-of-type(odd){
+
+
+    .adv-item-row .adv-item:nth-of-type(odd) .adv-item-inner{
         border-right: 1px solid #d9d9d9;
     }
 
@@ -59,6 +61,9 @@
     .nav-menu nav ul{
         display: none;
     }
+
+
+
 
 
 
@@ -157,8 +162,9 @@
 
     .adv-item-row .adv-item{
         flex-basis: 50%;
-        height: 170px;
         margin-bottom: 55px;
+        border-bottom: 1px solid #d9d9d9;
+        padding: 0;
     }
 
     .adv-item-row1:after{
@@ -203,6 +209,20 @@
     }
 
 
+    .adv-item-inner{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .adv-item:nth-last-of-type(1){
+        border-bottom: 0;
+    }
+
+    .adv-item:nth-last-of-type(2){
+        border-bottom: 0;
+    }
+
+
 
 
 
@@ -228,6 +248,10 @@
     .reg-col .form-header h1 span{
         font-size: 23px;
         padding-left: 0;
+    }
+
+    .save-money-wraper{
+        padding-bottom: 200px;
     }
     .bonus{
         bottom: -76px;
@@ -416,7 +440,7 @@
     }
 
     .how-it-works-h2 h2{
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .img-box img{
@@ -432,7 +456,18 @@
         left: 50%;
     }
 
+    .img-index:last-child:after{
+        display: none;
+    }
 
+
+    .dropbtn::after{
+        right: 1px;
+    }
+
+    .dropbtn{
+        width: 54px;
+    }
 
     .img-box{
         margin-bottom: 12px;
@@ -461,19 +496,43 @@
 
     .save-money-section .save-money-item1{
         flex-basis: 70%;
-        margin-top: 51px;
+        margin-top: 435px;
     }
 
     .save-money-item1 .save-money-item-text:after{
         left: 0;
+        font-size: 121px;
+        left: 50%;
+        transform: translate(-50%);
+
     }
 
-    .save-money-section{
-        padding-bottom: 30px;
+    .save-money-section .save-money-item1 h2{
+        font-size: 26px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: condensed;
+        line-height: normal;
+        letter-spacing: 1.7px;
+        text-align: left;
+        color: #ffffff;
+
     }
+
+    .save-money-item1 .save-money-item-text{
+        font-size: 18px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+    }
+
 
     .save-money-wraper{
-        background-position: 100%;
+        background-position: 50% 0%;
     }
 
     .tovxin-description-flex{
@@ -487,6 +546,14 @@
 
     .tovxin-description-flex .tovxin-desc-text-item h2{
         margin-bottom: 30px;
+        font-size: 34px;
+        font-weight: 900;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 2.3px;
+        text-align: left;
+        color: #333333;
     }
 
     .tovxin-desc-text-item .tovxin-desc-text{
@@ -507,7 +574,6 @@
 
     .adv-item-row .adv-item{
         flex-basis: 50%;
-        height: 170px;
         margin-bottom: 55px;
     }
 
@@ -562,6 +628,122 @@
     .adv-item-row .adv-item6{
         order: 6;
     }
+
+
+    .save-money-flex{
+        flex-direction: column;
+    }
+
+    .adv-item-row{
+        flex-direction: column;
+
+    }
+
+    .adv-item-inner{
+        border-bottom: 1px solid #d9d9d9;
+    }
+
+    .tovxin-desc-text-item .tovxin-desc-text{
+        font-size: 18px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.61;
+        letter-spacing: 0.8px;
+        text-align: left;
+        color: #333333;
+    }
+
+    .tovxin-desc-item img{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .calendar-section .calendar-flex-row .calendar-flex-col .calendar-text{
+        font-size: 18px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.61;
+        letter-spacing: 0.8px;
+        text-align: center;
+        color: #333333;
+    }
+
+    .calendar-section .calendar-flex-row .calendar-flex-col h3{
+        font-size: 20px;
+        font-weight: 900;
+        font-style: normal;
+        font-stretch: condensed;
+        line-height: normal;
+        letter-spacing: 0.9px;
+        text-align: center;
+        color: #333333;
+    }
+
+    .advantages-section .adv-flex-row h2{
+        font-size: 25px;
+        font-weight: 900;
+        font-style: normal;
+        font-stretch: condensed;
+        line-height: normal;
+        letter-spacing: 1.1px;
+        text-align: center;
+        color: #333333;
+    }
+
+    .footer-section{
+        background-image: url("../img/footer-320.png");
+    }
+
+    .footer-sec-flex h2{
+        font-size: 30px;
+        font-weight: 900;
+        font-style: normal;
+        font-stretch: condensed;
+        line-height: 1.03;
+        letter-spacing: 2px;
+        text-align: center;
+        color: #f8c51c;
+    }
+
+    .footer-sec-flex .text-footer{
+        font-size: 18px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.72;
+        letter-spacing: 0.2px;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .adv-item-row .adv-item h3{
+        font-size: 17px;
+        font-weight: 900;
+        font-style: normal;
+        font-stretch: condensed;
+        line-height: normal;
+        letter-spacing: 0.8px;
+        text-align: center;
+        color: #333333;
+    }
+
+    .adv-item-row .adv-item .adv-item-text{
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 0.7px;
+        text-align: center;
+        color: #333333;
+    }
+
+    .timer-element span{
+        font-size: 20px !important;
+    }
+
 
 }
 
