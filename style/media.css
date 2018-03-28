@@ -311,5 +311,205 @@
     .container {
         width: 100%;
     }
+
+    .nav-menu{
+        order: -1;
+        flex-grow: 1;
+        width: 30px;
+    }
+
+
+
+    .nav-menu nav li{
+        display: block;
+        text-align: center;
+    }
+
+    .nav-menu nav ul{
+        display: none;
+    }
+
+
+
+    .nav-menu nav ul li{
+        display: block;
+    }
+
+    .menu-trigger{
+        display: block;
+    }
+
+    .logo{
+        flex-grow: 1;
+        padding-right: 0px;
+    }
+
+    .reg-col{
+        display: none;
+    }
+
+    .timer{
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .timer h1{
+        text-align: left;
+        font-size: 27px;
+    }
+
+    #timerd427d058323a21ad0f00457f6e6e286a{
+        text-align: left !important;
+    }
+
+    .timer .timer-text{
+        text-align: left;
+        font-size: 20px;
+    }
+
+    .open-alert{
+        display: none ;
+    }
+
+    .flex-row{
+        flex-direction: column;
+    }
+
+    .how-it-works-section:after{
+        display: none;
+    }
+
+
+
+    .img-index:after{
+        content: "";
+        width: 3px;
+        height: 37px;
+        background-color: #f8c51c;
+        position: absolute;
+    }
+
+    .img-item-mg{
+        margin: 0;
+    }
+
+
+    .timer h2{
+        text-align: left;
+        transform: translateY(0);
+        font-size: 20px;
+    }
+
+    .img-text{
+        font-size: 17px;
+    }
+
+    .save-money-item2{
+        flex-basis: 44%;
+    }
+
+    .save-money-section .save-money-item1{
+        flex-basis: 70%;
+        margin-top: 51px;
+    }
+
+    .save-money-item1 .save-money-item-text:after{
+        left: 0;
+    }
+
+    .save-money-section{
+        padding-bottom: 30px;
+    }
+
+    .save-money-wraper{
+        background-position: 100%;
+    }
+
+    .tovxin-description-flex{
+        flex-direction: column;
+    }
+
+    .tovxin-desc-item{
+        display: flex;
+        justify-content: center;
+    }
+
+    .tovxin-description-flex .tovxin-desc-text-item h2{
+        margin-bottom: 30px;
+    }
+
+    .tovxin-desc-text-item .tovxin-desc-text{
+        margin-bottom: 25px;
+    }
+
+    .tovxin-desc-reg{
+        display: flex;
+        justify-content: center;
+    }
+    .calendar-section .calendar-flex-row .calendar-flex-col .calendar-item2{
+        display: none;
+    }
+
+    .calendar-section .calendar-flex-row .calendar-flex-col .calendar-item1{
+        width: 100%;
+    }
+
+    .adv-item-row .adv-item{
+        flex-basis: 50%;
+        height: 170px;
+        margin-bottom: 55px;
+    }
+
+    .adv-item-row1:after{
+        bottom: 69%;
+        width: 110%;
+        transform: translate(-6%, 0);
+    }
+
+    .img-index{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .adv-item-row .adv-item3{
+        border-left: 0;
+        border-right: 1px solid #d9d9d9;
+    }
+
+    .adv-item-row .adv-item1{
+        order: 1;
+    }
+
+    .adv-item-row .adv-item2{
+        order: 2;
+    }
+
+    .adv-item-row .adv-item3{
+        order: 3;
+        border-right: 0;
+    }
+
+    .adv-item-row .adv-item3:after{
+        content: "";
+        height: 1px;
+        background-color: #d9d9d9;
+        position: absolute;
+        width: 112%;
+        bottom: 36%;
+        transform: translate(-30%, 0);
+    }
+
+    .adv-item-row .adv-item4{
+        order: 2;
+    }
+
+    .adv-item-row .adv-item5{
+        order: 2;
+    }
+
+    .adv-item-row .adv-item6{
+        order: 6;
+    }
+
 }
 
