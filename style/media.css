@@ -1,13 +1,27 @@
 
 @media screen and (min-width: 1024px ) {
     .adv-item-row .adv-item:nth-of-type(3n-1) .adv-item-inner{
-        border-left: 1px solid black;
-        border-right: 1px solid black;
+        border-left: 1px solid #d9d9d9;
+        border-right: 1px solid #d9d9d9;
     }
 
     .adv-item{
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid #d9d9d9;
     }
+
+    .adv-item-row .adv-item:nth-last-of-type(1){
+        border-bottom: 0;
+    }
+
+    .adv-item-row .adv-item:nth-last-of-type(2){
+         border-bottom: 0;
+    }
+
+    .adv-item-row .adv-item:nth-last-of-type(3){
+        border-bottom: 0;
+    }
+
+
 
 
 }
@@ -21,7 +35,7 @@
     }
 
     .adv-item-row .adv-item:nth-of-type(odd){
-        border-right: 1px solid black;
+        border-right: 1px solid #d9d9d9;
     }
 
 

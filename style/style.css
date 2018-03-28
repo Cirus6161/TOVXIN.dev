@@ -851,11 +851,18 @@ body{
 
 
 .adv-item-row .adv-item{
-    padding-left: 34px;
-    padding-right: 34px;
+    padding-left: 16px;
+    padding-right: 16px;
     flex-basis: 33%;
     margin-bottom: 43px;
 }
+
+.adv-item-row .adv-item:nth-of-type(3n-1) .adv-item-inner{
+        padding-left: 15px;
+        padding-right: 15px;
+}
+
+
 
 .adv-item4{
     border-right: 1px solid #d9d9d9;
