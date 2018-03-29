@@ -714,8 +714,8 @@
     }
 
     .adv-item-row .adv-item{
-        flex-basis: 50%;
-        margin-bottom: 55px;
+        flex-basis: 100%;
+        margin-bottom: 20px;
     }
 
     .adv-item-row1:after{
@@ -778,7 +778,7 @@
 
     .adv-item-row{
         flex-direction: column;
-
+        margin-bottom: 15px;
     }
 
     .adv-item-inner{
@@ -801,6 +801,7 @@
         height: 223px;
         width: 100%;
         margin-bottom: 10px;
+
     }
 
     .calendar-section .calendar-flex-row .calendar-flex-col .calendar-text{
@@ -834,10 +835,13 @@
         letter-spacing: 1.1px;
         text-align: center;
         color: #333333;
+        margin-bottom: 21px;
+        margin-top: 40px;
     }
 
     .footer-section{
         background-image: url("../img/footer-320.png");
+        padding-bottom: 29px;
     }
 
     .footer-sec-flex h2{
@@ -849,9 +853,12 @@
         letter-spacing: 2px;
         text-align: center;
         color: #f8c51c;
+        margin-top: 37px;
+        margin-bottom: 12px;
     }
 
     .footer-sec-flex .text-footer{
+        padding-bottom: 23px;
         font-size: 18px;
         font-weight: normal;
         font-style: normal;
@@ -914,8 +921,20 @@
         margin-bottom: -9px;
     }
 
-    .advantages-section
+    .advantages-section{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 
+    .adv-item-row .adv-item:nth-of-type(3n-1) .adv-item-inner{
+        padding: 0;
+    }
+
+
+    .footer-section .submit-button{
+        margin-top: 5px;
+
+    }
 
 
 }
