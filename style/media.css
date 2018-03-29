@@ -401,18 +401,38 @@
     }
 
     .how-it-works-h2{
-        transform: translate(0);
+        transform: translate(0%, 230%);
     }
 
 
     .header-section{
         background-image: url("../img/main-320.png");
+        padding-bottom: 67px;
     }
 
     .nav-menu{
         order: -1;
         flex-grow: 1;
         width: 30px;
+    }
+
+    .down{
+        width: 71px;
+        position: absolute;
+        left: 0;
+        bottom: -111px;
+        z-index: 10;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .down img{
+        width: 71px;
+    }
+
+    .how-it-works-section{
+        padding-top: 14px;
+        padding-bottom: 15px;
     }
 
 
@@ -453,7 +473,14 @@
 
     .timer h1{
         text-align: left;
-        font-size: 27px;
+        font-size: 25px;
+    }
+
+    .timer h1 span{
+        margin-top: 10px;
+        text-transform: lowercase;
+        color: #ffffff;
+        display: inline-block;
     }
 
     #timerd427d058323a21ad0f00457f6e6e286a{
@@ -464,6 +491,15 @@
     .timer .timer-text{
         text-align: left;
         font-size: 20px;
+        margin-top: 2px;
+        font-family: "HelveticaNeue", sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.1;
+        letter-spacing: -1.3px;
+        color: #ffffff;
+        text-transform: lowercase;
     }
 
     .timer-separator{
@@ -528,7 +564,7 @@
     }
 
     .img-box{
-        margin-bottom: 12px;
+        margin-bottom: 7px;
     }
 
 
@@ -542,6 +578,9 @@
         text-align: left;
         transform: translateY(0);
         font-size: 20px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        margin-bottom: 30px;
     }
 
     .img-text{
@@ -555,7 +594,7 @@
     .save-money-section .save-money-item1{
         flex-basis: 70%;
         margin-top: 435px;
-        transform: translate(0);
+        transform: translate(0%, 6%);
     }
 
     .save-money-item1 .save-money-item-text:after{
@@ -575,7 +614,17 @@
         letter-spacing: 1.7px;
         text-align: left;
         color: #ffffff;
+        margin-bottom: 9px;
 
+    }
+
+    .tovxin-description-section{
+        padding-bottom: 108px;
+        padding-top: 50px;
+    }
+
+    .save-money-section{
+        padding-bottom: 20px;
     }
 
     .save-money-item1 .save-money-item-text{
@@ -655,7 +704,7 @@
     }
 
     .img-index{
-        transform: translate(0);
+        transform: translate(0%, 12%);
         padding-left: 0;
         padding-right: 0;
         margin-bottom: 50px;
@@ -727,6 +776,7 @@
     }
 
     .tovxin-desc-item img{
+        height: 223px;
         width: 100%;
         margin-bottom: 10px;
     }
@@ -815,6 +865,34 @@
     .timer-element span{
         font-size: 20px !important;
     }
+
+    .h1{
+        margin-bottom: 13px;
+        font-family: "HelveticaNeueCondensedBlack";
+        font-size: 21px;
+        font-weight: 900;
+        font-style: normal;
+        font-stretch: condensed;
+        line-height: normal;
+        letter-spacing: 0.8px;
+        text-align: left;
+        color: #ffffff;
+        text-transform: uppercase;
+        background-color: #f8c51c;
+        padding-right: 2px;
+        padding-left: 2px;
+        display: inline-block;
+    }
+
+    .navigation{
+        padding-bottom: 36px;
+    }
+
+    #timerd427d058323a21ad0f00457f6e6e286a{
+        margin-bottom: -9px;
+    }
+
+
 
 
 }
