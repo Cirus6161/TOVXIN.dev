@@ -936,6 +936,10 @@
 
     }
 
+    footer{
+        overflow: hidden;
+    }
+
 
 }
 
