@@ -1220,3 +1220,34 @@ footer{
     width: 0;
 }
 
+.fancybox-wrap .fancybox-mobile .fancybox-type-inline .fancybox-opened{
+    width: 290px;
+}
+
+.form-header-modal{
+    width: 290px;
+}
+
+.form-body-modal{
+    width: 290px;
+    padding-bottom: 21px;
+}
+
+.form-header-modal h1{
+    font-size: 25px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: condensed;
+    line-height: normal;
+    letter-spacing: -0.3px;
+    text-align: left;
+    color: #f8c51c;
+}
+
+.form-header-modal h1 span{
+    font-size: 20px;
+}
+
+
+
+
