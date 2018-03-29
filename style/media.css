@@ -619,7 +619,7 @@
     }
 
     .tovxin-description-section{
-        padding-bottom: 108px;
+        padding-bottom: 24px;
         padding-top: 50px;
     }
 
@@ -636,6 +636,11 @@
         letter-spacing: normal;
         text-align: left;
         color: #ffffff;
+    }
+
+    .calendar-section{
+        padding-top: 35px;
+        padding-bottom: 12px;
     }
 
 
@@ -667,6 +672,7 @@
         letter-spacing: 2.3px;
         text-align: left;
         color: #333333;
+        transform: translate(0%, 60%);
     }
 
     .tovxin-desc-text-item .tovxin-desc-text{
@@ -676,6 +682,7 @@
     .tovxin-desc-reg{
         display: flex;
         justify-content: center;
+        margin-top: 20px;
     }
     .calendar-section .calendar-flex-row .calendar-flex-col .calendar-item2{
         display: none;
@@ -690,6 +697,20 @@
     .calendar-section .calendar-flex-row .calendar-flex-col .calendar-item1{
         width: 100%;
         transform: translate(0);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        padding-top: 25px;
+        padding-bottom: 20px;
+        padding-left: 3px;
+        padding-right: 3px;
+        position: relative;
+        z-index: 10;
+    }
+
+    .calendar-section .calendar-flex-row .calendar-flex-col .calendar-text:after{
+        bottom: 0;
     }
 
     .adv-item-row .adv-item{
@@ -773,6 +794,7 @@
         letter-spacing: 0.8px;
         text-align: left;
         color: #333333;
+        transform: translate(0%, 7%);
     }
 
     .tovxin-desc-item img{
@@ -892,6 +914,7 @@
         margin-bottom: -9px;
     }
 
+    .advantages-section
 
 
 
