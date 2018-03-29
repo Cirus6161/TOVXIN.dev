@@ -51,6 +51,11 @@
         width: 30px;
     }
 
+    .dropdown{
+        transform: translate(0);
+        left: 0;
+    }
+
 
 
     .nav-menu nav li{
@@ -87,6 +92,7 @@
     .timer{
         flex-basis: 100%;
         text-align: center;
+        transform: translate(0);
     }
 
     .timer h1{
@@ -158,6 +164,7 @@
 
     .calendar-section .calendar-flex-row .calendar-flex-col .calendar-item1{
         width: 100%;
+        transform: translate(0);
     }
 
     .adv-item-row .adv-item{
@@ -165,6 +172,10 @@
         margin-bottom: 55px;
         border-bottom: 1px solid #d9d9d9;
         padding: 0;
+    }
+
+    .adv-flex-row{
+        transform: translate(0);
     }
 
     .adv-item-row1:after{
@@ -244,6 +255,23 @@
    .reg-col .form-header h1{
         font-size: 23px;
     }
+
+    .calendar-section .calendar-flex-row .calendar-flex-col .calendar-item1{
+        transform: translate(0);
+    }
+
+    .adv-flex-row{
+        transform: translate(0);
+    }
+
+    .footer-sec-flex{
+        transform: translate(0);
+    }
+
+    .footer-col h3{
+        transform: translate(0);
+    }
+
 
     .reg-col .form-header h1 span{
         font-size: 23px;
@@ -367,6 +395,15 @@
         width: 100%;
     }
 
+    .dropdown{
+        transform: translate(0);
+        left: 0;
+    }
+
+    .how-it-works-h2{
+        transform: translate(0);
+    }
+
 
     .header-section{
         background-image: url("../img/main-320.png");
@@ -411,6 +448,7 @@
     .timer{
         flex-basis: 100%;
         text-align: center;
+        transform: translate(0);
     }
 
     .timer h1{
@@ -419,12 +457,32 @@
     }
 
     #timerd427d058323a21ad0f00457f6e6e286a{
-        text-align: left !important;
+        text-align: center !important;
+        min-width: 100% !important;
     }
 
     .timer .timer-text{
         text-align: left;
         font-size: 20px;
+    }
+
+    .timer-separator{
+        padding: 0 5px !important;
+    }
+
+
+
+    .tovxin-desc-reg .button{
+        transform: translate(0);
+    }
+
+
+    .nav-menu nav{
+        position: absolute;
+    }
+
+    .timer-flipchart-inner{
+        margin-right: 3px !important;
     }
 
     .open-alert{
@@ -497,6 +555,7 @@
     .save-money-section .save-money-item1{
         flex-basis: 70%;
         margin-top: 435px;
+        transform: translate(0);
     }
 
     .save-money-item1 .save-money-item-text:after{
@@ -537,6 +596,11 @@
 
     .tovxin-description-flex{
         flex-direction: column;
+        transform: translate(0);
+    }
+
+    .footer-sec-flex{
+        transform: translate(0);
     }
 
     .tovxin-desc-item{
@@ -566,10 +630,17 @@
     }
     .calendar-section .calendar-flex-row .calendar-flex-col .calendar-item2{
         display: none;
+
     }
+
+    .adv-flex-row{
+        transform: translate(0);
+    }
+
 
     .calendar-section .calendar-flex-row .calendar-flex-col .calendar-item1{
         width: 100%;
+        transform: translate(0);
     }
 
     .adv-item-row .adv-item{
@@ -584,6 +655,7 @@
     }
 
     .img-index{
+        transform: translate(0);
         padding-left: 0;
         padding-right: 0;
         margin-bottom: 50px;

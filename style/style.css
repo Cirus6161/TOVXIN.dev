@@ -497,11 +497,13 @@ body{
 }
 
 .down{
+    width: 133px;
     position: absolute;
-    left: 50%;
-    transform: translate(-25%);
+    left: 0;
     bottom: -267px;
     z-index: 10;
+    right: 0;
+    margin: 0 auto;
 }
 
 .reg-col form #accept:checked + label::after{
@@ -542,7 +544,6 @@ body{
 
 .how-it-works-h2{
     text-align: center;
-    transform: translate(3%, 17%);
 }
 
 .how-it-works-h2 h2{
@@ -585,7 +586,6 @@ body{
 
 .img-index{
     z-index: 10;
-    transform: translate(11%, 4%);
     flex-basis: 33%;
 }
 
