@@ -73,7 +73,7 @@ body{
 .header-section{
     background-image: url("../img/main.png");
     background-size: cover;
-    padding-bottom: 146px;
+    padding-bottom: 186px;
 }
 
 .header-section .logo a{
@@ -115,6 +115,7 @@ body{
 
 .nav-menu nav {
     width: 100%;
+    transform: translate(-11%, 29%);
 }
 
 .nav-menu nav li{
@@ -182,6 +183,7 @@ body{
 
 .logo{
     padding-right: 50px;
+    transform: translate(11%, 11%);
 }
 
 .nav-menu nav ul{
@@ -212,6 +214,8 @@ body{
 .dropdown {
     position: relative;
     display: inline-block;
+    transform: translate(0%, 10%);
+    left: 7%;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -288,7 +292,8 @@ body{
 }
 
 .timer{
-    flex-basis: 48%;
+    flex-basis: 58%;
+    transform: translate(2%, 6%);
 }
 
 .timer h1{
@@ -413,6 +418,7 @@ body{
     background-color: #fff;
     padding-bottom: 30px;
     border-radius: 3px;
+    transform: translate(0%, 2%);
 }
 
 #accept{
@@ -493,8 +499,8 @@ body{
 .down{
     position: absolute;
     left: 50%;
-    transform: translate(-50%);
-    bottom: -231px;
+    transform: translate(-25%);
+    bottom: -267px;
     z-index: 10;
 }
 
@@ -520,7 +526,7 @@ body{
 
 .how-it-works-section{
     padding-top: 103px;
-    padding-bottom: 80px;
+    padding-bottom: 102px;
     position: relative;
 }
 
@@ -536,6 +542,7 @@ body{
 
 .how-it-works-h2{
     text-align: center;
+    transform: translate(3%, 17%);
 }
 
 .how-it-works-h2 h2{
@@ -554,14 +561,12 @@ body{
 .flex-row{
     display: flex;
     justify-content: center;
+
 }
 
 
 
-.img-item-mg{
-    margin-right: 15%;
-    margin-left: 15%;
-}
+
 
 .img-box{
     text-align: center;
@@ -580,6 +585,8 @@ body{
 
 .img-index{
     z-index: 10;
+    transform: translate(11%, 4%);
+    flex-basis: 33%;
 }
 
 .form-body{
@@ -613,13 +620,14 @@ body{
 .save-money-wraper{
     background-image: url("../img/save-money.svg");
     background-repeat: no-repeat;
-    background-position: 66%;
+    background-position-x: 71%;
     padding-bottom: 120px;
 }
 
 .save-money-section .save-money-item1{
     flex-basis: 51%;
     margin-top: 91px;
+    transform: translate(4%, 2%);
 }
 
 .save-money-section .save-money-item1 h2{
@@ -669,18 +677,25 @@ body{
     bottom: -108px;
 }
 
+.tovxin-desc-reg .button{
+    transform: translate(11%, 0%);
+}
+
 
 /*4th SECTION*/
 
 .tovxin-description-section{
     padding-top: 85px;
-    padding-bottom: 85px;
+    padding-bottom: 113px;
 }
 
 .tovxin-description-flex{
     display: flex;
     align-items: stretch;
+    transform: translate(2%, 6%);
 }
+
+
 
 .tovxin-desc-text-item{
     display: flex;
@@ -699,6 +714,7 @@ body{
     letter-spacing: 0.9px;
     text-align: left;
     color: #333333;
+    transform: translate(3%, -5%);
 }
 
 .tovxin-description-flex .tovxin-desc-text-item h2{
@@ -714,6 +730,7 @@ body{
     text-transform: uppercase;
     border-left: 3px solid #f8c51c;
     padding-left: 9px;
+    transform: translate(3%, -26%);
 }
 
 /*5th-SECTION*/
@@ -721,7 +738,7 @@ body{
 .calendar-section{
     background-image: linear-gradient(253deg, #494949, #232323);
     padding-top: 107px;
-    padding-bottom: 81px;
+    padding-bottom: 103px;
 }
 
 .calendar-section .calendar-flex-row{
@@ -739,17 +756,18 @@ body{
     background-color: #fff;
     width: 58%;
     padding-top: 25px;
-    padding-bottom: 73px;
+    padding-bottom: 100px;
     padding-left: 25px;
     padding-right: 25px;
     position: relative;
     z-index: 10;
+    transform: translate(11%, 4%);
 }
 
 .calendar-section .calendar-flex-row .calendar-flex-col .calendar-item2{
     position: absolute;
-    top: -75px;
-    right: 128px;
+    top: -46px;
+    right: 23px;
 }
 
 .calendar-section .calendar-flex-row .calendar-flex-col h3{
@@ -779,16 +797,16 @@ body{
     text-align: center;
     color: #333333;
     position: relative;
+    padding-bottom: 4px;
 }
 
 .calendar-section .calendar-flex-row .calendar-flex-col .calendar-text:after{
     content: "";
     background-color: #f8c51c;
     height: 2px;
-    width: 30%;
     position: absolute;
     bottom: -30px;
-    width: 30%;
+    width: 50%;
     transform: translate(-50%, 0);
     left: 50%;
 }
@@ -796,7 +814,7 @@ body{
 /*6th-Section*/
 .advantages-section{
     padding-top: 80px;
-    padding-bottom: 10px;
+    padding-bottom: 32px;
 }
 
 .advantages-section .adv-flex-row h2{
@@ -814,6 +832,7 @@ body{
 
 .adv-flex-row{
     text-align: center;
+    transform: translate(4%, 1%);
 }
 
 
@@ -915,7 +934,7 @@ body{
 .footer-section{
     background-image: url("../img/footer.png");
     background-size: cover;
-    padding-bottom: 90px;
+    padding-bottom: 100px;
 }
 
 .footer-sec-flex{
@@ -923,6 +942,7 @@ body{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    transform: translate(2%, 2%);
 }
 
 .footer-sec-flex h2{
@@ -949,6 +969,7 @@ body{
     letter-spacing: 0.3px;
     text-align: center;
     color: #ffffff;
+    padding-bottom: 40px;
 }
 
 footer{
@@ -972,6 +993,7 @@ footer{
     line-height: normal;
     letter-spacing: 2.6px;
     color: #ffffff;
+    transform: translate(3%);
 }
 
  /*MODAL-WINDOWS*/
