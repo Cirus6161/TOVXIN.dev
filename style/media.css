@@ -28,6 +28,9 @@
 
 
 
+
+
+
 /*ПЛАНШЕТ*/
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .container {
@@ -136,7 +139,6 @@
 
     .timer h2{
         text-align: center;
-        transform: translateY(-100%);
         margin-bottom: 0px;
     }
 
@@ -298,6 +300,23 @@
 
     .advantages-section{
         padding-bottom: 0px;
+    }
+
+    .footer-sec-flex h2{
+        margin-top: 71px;
+        margin-bottom: 35px;
+    }
+
+    .footer-section{
+        padding-bottom: 69px;
+    }
+
+    .footer-section .submit-button{
+        margin-top: 0;
+    }
+
+    .footer-sec-flex .text-footer{
+        padding-bottom: 15px;
     }
 
 
