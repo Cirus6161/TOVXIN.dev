@@ -182,10 +182,16 @@
 
     .tovxin-description-flex .tovxin-desc-text-item h2{
         margin-bottom: 30px;
+        transform: translate(-3%, 0%);
     }
 
     .tovxin-desc-text-item .tovxin-desc-text{
-        margin-bottom: 25px;
+        margin-bottom: 60px;
+        transform: translate(-3%, 0%);
+    }
+
+    .tovxin-desc-reg .button{
+        transform: translate(0);
     }
 
     .tovxin-desc-reg{
@@ -203,7 +209,7 @@
 
     .adv-item-row .adv-item{
         flex-basis: 50%;
-        margin-bottom: 55px;
+        margin-bottom: 52px;
         border-bottom: 1px solid #d9d9d9;
         padding: 0;
     }
@@ -255,8 +261,8 @@
 
 
     .adv-item-inner{
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .adv-item:nth-last-of-type(1){
@@ -270,6 +276,28 @@
 
     .tovxin-description-section{
         padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .calendar-section{
+        padding-top: 93px;
+        padding-bottom: 96px;
+    }
+
+    .advantages-section{
+        padding-top: 50px;
+    }
+
+    .advantages-section .adv-flex-row h2{
+        margin-bottom: 30px;
+    }
+
+    .adv-item-row1{
+        margin-bottom: 0px;
+    }
+
+    .advantages-section{
+        padding-bottom: 0px;
     }
 
 
