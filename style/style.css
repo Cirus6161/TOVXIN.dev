@@ -131,7 +131,7 @@ body{
     background-color: #e65540;
 }
 
-.menu-trigger{
+.menu-trg{
     text-align: center;
     display: none;
 }
@@ -215,7 +215,7 @@ body{
     position: relative;
     display: inline-block;
     transform: translate(0%, 10%);
-    left: 7%;
+    left: 23%;
 }
 
 /* Dropdown Content (Hidden by Default) */
