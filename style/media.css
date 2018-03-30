@@ -43,7 +43,28 @@
 
     .header-section{
         background-image: url("../img/main-768.png");
+        padding-bottom: 170px;
     }
+
+    .down{
+        width: 85px;
+        bottom: -223px;
+    }
+
+    .down img{
+        width: 85px;
+    }
+
+    .how-it-works-section{
+        padding-top: 52px;
+        padding-bottom: 54px;
+    }
+
+    .how-it-works-section:after{
+        bottom: 43%;
+    }
+
+
 
     .nav-menu{
         order: -1;
@@ -83,6 +104,11 @@
     .logo{
         flex-grow: 1;
         padding-right: 0px;
+        transform: translate(0);
+    }
+
+    .navigation{
+        padding-bottom: 109px;
     }
 
     .reg-col{
@@ -101,6 +127,7 @@
 
     #timerd427d058323a21ad0f00457f6e6e286a{
         text-align: center !important;
+        margin-bottom: 35px;
     }
 
     .timer .timer-text{
@@ -110,10 +137,13 @@
     .timer h2{
         text-align: center;
         transform: translateY(-100%);
+        margin-bottom: 0px;
     }
 
     .img-text{
-        font-size: 17px;
+        font-size: 20px;
+        margin-top: 7px;
+
     }
 
     .save-money-item2{
@@ -123,6 +153,7 @@
     .save-money-section .save-money-item1{
         flex-basis: 70%;
         margin-top: 51px;
+        transform: translate(-5%, 0%);
     }
 
     .save-money-item1 .save-money-item-text:after{
@@ -130,20 +161,23 @@
     }
 
     .save-money-section{
-        padding-bottom: 30px;
+        padding-bottom: 19px;
     }
 
     .save-money-wraper{
-        background-position: 100%;
+        background-position: 97% 5%;
     }
 
     .tovxin-description-flex{
         flex-direction: column;
+        transform: translate(0);
+
     }
 
     .tovxin-desc-item{
         display: flex;
         justify-content: center;
+        margin-bottom: 15px;
     }
 
     .tovxin-description-flex .tovxin-desc-text-item h2{
@@ -232,6 +266,13 @@
     .adv-item:nth-last-of-type(2){
         border-bottom: 0;
     }
+
+
+    .tovxin-description-section{
+        padding-top: 50px;
+    }
+
+
 
 
 
