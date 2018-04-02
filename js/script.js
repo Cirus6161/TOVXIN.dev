@@ -334,4 +334,17 @@ $(function () {
 });
 
 
+$(function () {
+    $("#js-register-form").validate({
+
+        rules:{
+            form_email:{
+                required: true
+            }
+        }
+
+    });
+
+})
+
 

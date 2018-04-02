@@ -72,17 +72,17 @@
 
                         <!--Registration-->
                         <div class="reg-col col">
-                            <form action="" method="" class="intro-reg-form">
-                            <div class="form-header">
-                                <h1>ЗАРЕГИСТРИРУЙСЯ  СЕЙЧАС <br>
-                                    <span>И УЧАСТВУЙ В РОЗЫГРЫШЕ</span>
-                                </h1>
-                                <div class="bonus"><img src="img/group-21.png"></div>
-                            </div>
+                            <form action="" method="" class="intro-reg-form" id="js-register-form">
+                                <div class="form-header">
+                                    <h1>ЗАРЕГИСТРИРУЙСЯ  СЕЙЧАС <br>
+                                        <span>И УЧАСТВУЙ В РОЗЫГРЫШЕ</span>
+                                    </h1>
+                                    <div class="bonus"><img src="img/group-21.png"></div>
+                                </div>
                             <div class="form-body">
-                                <input type="email" placeholder="Email" class="email">
-                                <input type="number" placeholder="Телефон" class="cellphone">
-                                <input type="checkbox" id="accept"><label for="accept">Согласие на сбор и обработку личных данных</label>
+                                <input type="email" placeholder="Email" class="email" name="form_email">
+                                <input type="number" placeholder="Телефон" class="cellphone" name="form_phone">
+                                <input type="checkbox" id="accept" name="form_check"><label for="accept">Согласие на сбор и обработку личных данных</label>
                                 <div class="footer-form">
                                 <input type="submit" class="submit-button button" value="Зарегистрироваться">
                                 </div>
@@ -373,8 +373,9 @@
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
 <script type="text/javascript" src="fancybox/jquery.fancybox.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
 <script type="text/javascript" src="js/jquery.mmenu.all.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
 
