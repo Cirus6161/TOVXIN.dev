@@ -464,6 +464,10 @@
         font-size: 25px;
     }
 
+    .reg-col form .accept{
+        font-size: 9px;
+    }
+
 }
 
 
@@ -486,6 +490,10 @@
     .dropdown{
         transform: translate(0);
         left: 0;
+    }
+
+    .form-body-modal label{
+        font-size: 9px;
     }
 
 

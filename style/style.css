@@ -473,7 +473,7 @@ body{
 
 .reg-col form .accept{
     font-family: "HelveticaNeueLight", sans-serif;
-    font-size: 9px;
+    font-size: 12px;
     font-weight: 300;
     font-style: normal;
     font-stretch: normal;
@@ -1292,7 +1292,8 @@ label.error{
 }
 
 
-label.form_check-error{
-    position: absolute;
+label#form_check-error{
+    position: absolute !important;
+    bottom: 20%;
 }
 
