@@ -199,6 +199,11 @@ body{
 }
 
 
+.flip-clock-wrapper ul li a div div.inn{
+    font-size: 1em;
+}
+
+
 /*Header content*/
 
 /*DROPDOWN LANG*/
@@ -213,9 +218,9 @@ body{
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
-    display: inline-block;
+    display: block;
     transform: translate(0%, 10%);
-    left: 23%;
+    left: 0;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -1261,6 +1266,34 @@ label.error{
     margin-bottom: 10px;
 }
 
+.clock{
+    display: inline-block;
+    width: auto;
+    zoom: 0.66;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.flip-clock-wrapper ul li a div div.inn{
+    background-color: #fff;
+}
 
 
+.flip-clock-divider .flip-clock-label{
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: condensed;
+    line-height: normal;
+    letter-spacing: -1px;
+    text-align: left;
+    color: #a3a3a3;
+    top: 95%;
+}
+
+
+label.form_check-error{
+    position: absolute;
+}
 

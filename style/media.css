@@ -504,6 +504,10 @@
         width: 30px;
     }
 
+    .clock{
+        zoom: 0.46;
+    }
+
     .down{
         width: 71px;
         position: absolute;
@@ -575,7 +579,6 @@
         text-align: center !important;
         min-width: 100% !important;
     }
-
     .timer .timer-text{
         text-align: left;
         font-size: 20px;

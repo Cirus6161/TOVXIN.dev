@@ -368,8 +368,21 @@ $(function () {
 
 });
 
+    var clock;
+    clock = $(".clock").FlipClock({
+        clockFace : "DailyCounter",
+        autoStart : false,
+        language : "ru",
+        callbacks : {
+            stop : function () {
+                $(".message").html("Время прошло");
+            }
+        }
+    });
 
-
+    clock.setTime(50000);
+    clock.setCountdown(true);
+    clock.start();
 
 
 
