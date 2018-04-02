@@ -488,9 +488,43 @@
         left: 0;
     }
 
+
+    .form-header-modal{
+        width: 290px;
+    }
+
+    .form-body-modal{
+        width: 290px;
+    }
+
     .how-it-works-h2{
         transform: translate(0%, 230%);
     }
+
+    .fancybox-inner{
+        width: 290px !important;
+        height: 430px !important;
+    }
+
+    .form-header-modal h1{
+        font-size: 25px;
+    }
+
+    .form-header-modal h1 span{
+        font-size: 20px;
+    }
+
+    .intro-reg-form-modal{
+        padding-bottom: 32px;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+    }
+
+    .timer:first-of-type a{
+        margin-right: 0px;
+    }
+
+
 
 
     .header-section{
@@ -1332,6 +1366,8 @@ and (orientation : landscape) {
     .footer-sec-flex .text-footer{
         padding-bottom: 15px;
     }
+
+
 
 
 }

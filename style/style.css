@@ -473,11 +473,10 @@ body{
 
 .reg-col form .accept{
     font-family: "HelveticaNeueLight", sans-serif;
-    font-size: 12px;
+    font-size: 9px;
     font-weight: 300;
     font-style: normal;
     font-stretch: normal;
-    line-height: normal;
     letter-spacing: 1px;
     text-align: left;
     color: #8f8f8f;
@@ -1232,16 +1231,16 @@ footer{
 }
 
 .form-header-modal{
-    width: 290px;
+    width: 360px;
 }
 
 .form-body-modal{
-    width: 290px;
+    width: 360px;
     padding-bottom: 21px;
 }
 
 .form-header-modal h1{
-    font-size: 25px;
+    font-size: 31px;
     font-weight: bold;
     font-style: normal;
     font-stretch: condensed;
@@ -1252,7 +1251,7 @@ footer{
 }
 
 .form-header-modal h1 span{
-    font-size: 20px;
+    font-size: 25px;
 }
 
 input.error{
