@@ -11,7 +11,7 @@ $(document).ready(function() {
     })
 
 
-});
+
 
 
 
@@ -353,9 +353,24 @@ $(function () {
            }
        }
 
+    })
+
+
+});
+
+
+
+
+$("#js-register-form").submit(function () {
+    $.ajax({
+        type: "POST",
+        url: "mail.php",
+        date: $(this).serialize()
+    }).done(function () {
+        alert("Спасибо за заявку!")
     });
+    return false;
+});
 
 
-})
-
-
+});
