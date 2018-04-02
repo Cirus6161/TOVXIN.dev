@@ -333,17 +333,28 @@ $(function () {
 
 });
 
+/*Validation*/
+
 
 $(function () {
+
     $("#js-register-form").validate({
 
-        rules:{
-            form_email:{
-                required: true
-            }
-        }
+       rules: {
+           form_email:{
+               required: true,
+               email: true
+           },
+           form_phone:{
+               required: true,
+           },
+           form_check:{
+               required: true
+           }
+       }
 
     });
+
 
 })
 
