@@ -351,26 +351,27 @@ $(function () {
            form_check:{
                required: true
            }
-       }
+       },
+        submitHandler: function(form){
+            $.ajax({
+                url: "mail.php",
+                type: "POST",
+                data: $(this).serialize(),
+                success: function (response) {
+                    alert("спасибо")
+                }
+            })
+        }
 
-    })
-
-
-});
-
-
-
-
-$("#js-register-form").submit(function () {
-    $.ajax({
-        type: "POST",
-        url: "mail.php",
-        date: $(this).serialize()
-    }).done(function () {
-        alert("Спасибо за заявку!")
     });
-    return false;
+
+
 });
+
+
+
+
+
 
 
 });
