@@ -1250,6 +1250,17 @@ footer{
     font-size: 20px;
 }
 
+input.error{
+    border-color: red !important;
+    outline-color: red;
+}
+
+label.error{
+    color: red;
+    display: block;
+    margin-bottom: 10px;
+}
+
 
 
 
