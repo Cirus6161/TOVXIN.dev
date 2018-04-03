@@ -494,6 +494,13 @@
 
     .form-body-modal label{
         font-size: 9px;
+        margin-bottom: 1px;
+    }
+
+
+    .reg-modal-success{
+        width: 290px;
+        height: 430px;
     }
 
 

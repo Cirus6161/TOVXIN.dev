@@ -351,6 +351,7 @@ body{
 }
 
 .button{
+    cursor: pointer;
     display: inline-block;
     padding: 15px 12px;
     border: 1px solid #f8c51c;
@@ -365,11 +366,35 @@ body{
     background-color: rgba(248, 197, 28, 0);
 }
 
+.registration-button:hover{
+    background-color: transparent;
+    transition-duration: 0.3s;
+}
+
+.registration-button:hover + a.open-alert{
+    background-color: #f8c51c;
+    transition-duration: 0.3s;
+}
+
+
+
 .open-alert:hover{
     background-color: #f8c51c;
     transition-duration: 0.3s;
 }
 
+.open-alert:hover  a.registration-button{
+    background-color: transparent;
+    transition-duration: 0.3s;
+}
+
+.black-style:hover{
+    color: black;
+}
+
+.white-style:hover{
+    color: #fff;
+}
 /*HEADER-CONTENT-REGISTRATION*/
 
 
@@ -1103,7 +1128,8 @@ footer{
 }
 
 #accept-modal{
-    display: none;
+    display: block;
+    opacity: 0;
 }
 
 .form-body-modal label:before{
@@ -1210,7 +1236,8 @@ footer{
 
 
 #alert-modal{
-    display: none;
+    display: block;
+    opacity: 0;
 }
 
 
@@ -1297,3 +1324,14 @@ label#form_check-error{
     bottom: 20%;
 }
 
+label#form_phone-error.error::before{
+    display: none;
+}
+
+label#form_email-error.error::before{
+    display: none;
+}
+
+label#form_check-error.error::before{
+    display: none;
+}

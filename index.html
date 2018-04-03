@@ -68,13 +68,13 @@
                                 УСПЕЙ ЗАРЕГИСРИРОВАТЬСЯ ПЕРВЫМ И ПОЛУЧАЙ
                             </div>
                             <h2>Приятные бонусы</h2>
-                            <a href="#reg" class="registration-button button">Зарегистрироваться</a>
-                            <a href="#alert" class="open-alert button" >Сообщить от открытии</a>
+                            <a class="registration-button button button-reg">Зарегистрироваться</a>
+                            <a id="button-open-alert" class="open-alert button" >Сообщить от открытии</a>
                         </div>
 
                         <!--Registration-->
                         <div class="reg-col col">
-                            <form action="mail.php" method="POST" class="intro-reg-form" id="js-register-form">
+                               <form class="intro-reg-form" id="js-register-form">
                                 <div class="form-header">
                                     <h1>ЗАРЕГИСТРИРУЙСЯ  СЕЙЧАС <br>
                                         <span>И УЧАСТВУЙ В РОЗЫГРЫШЕ</span>
@@ -169,7 +169,7 @@
                         Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius.
                     </div>
                     <div class="tovxin-desc-reg">
-                        <a href="#reg" class="registration-button button">Зарегистрироваться</a>
+                        <a href="" class="registration-button button button-reg black-style">Зарегистрироваться</a>
                     </div>
                 </div>
             </div>
@@ -272,7 +272,7 @@
                         - все это стоит регистрации.
                         Нулевой риск, и вы получаете торговую платформу, которая подходит для ваших сделок.</div>
                     <div>
-                        <a href="#reg" class="registration-button submit-button button">зарегистрироваться</a>
+                        <a href="" class="registration-button submit-button button button-reg white-style">зарегистрироваться</a>
                     </div>
                 </div>
             </div>
@@ -292,8 +292,8 @@
     </footer>
     </div>
    <!--MODAL-WINDOWS-->
-<div id="reg" class="reg-modal">
-    <form action="" method="" class="intro-reg-form-modal">
+<div class="reg-modal">
+    <form class="intro-reg-form-modal" id="reg">
         <div class="form-header-modal">
             <h1>ЗАРЕГИСТРИРУЙСЯ  СЕЙЧАС <br>
                 <span>И УЧАСТВУЙ В РОЗЫГРЫШЕ -1000$
@@ -301,11 +301,11 @@
             </h1>
         </div>
         <div class="form-body-modal">
-            <input type="email" placeholder="Email" class="email" required>
-            <input type="number" placeholder="Телефон" class="cellphone" required>
-            <input type="checkbox" id="accept-modal" required><label for="accept-modal">Согласие на сбор и обработку личных данных</label>
+            <input type="email" placeholder="Email" class="email" name="form_email">
+            <input type="number" placeholder="Телефон" class="cellphone" name="form_phone">
+            <input type="checkbox" id="accept-modal" name="form_check"><label for="accept-modal">Согласие на сбор и обработку личных данных</label>
             <div class="footer-form-modal">
-                <a href="#reg-success" class="reg-thx">
+                <a href="#reg-success"  class="reg-thx" id="#close">
                     <input type="submit"  class="submit-button button" value="Зарегистрироваться">
                 </a>
             </div>
@@ -313,17 +313,17 @@
     </form>
 </div>
 
-<div id="alert" class="alert-modal">
-    <form action="" method="" class="intro-reg-form-modal" id="form1">
+<div  class="alert-modal">
+    <form action="" method="" class="intro-reg-form-modal" id="alert" >
         <div class="form-header-modal">
             <h1>Совсем скоро открытие! <br>
                 <span>Непропустите - заполните данные</span>
             </h1>
         </div>
         <div class="form-body-modal">
-            <input type="email" placeholder="Email" class="email">
-            <input type="number" placeholder="Телефон" class="cellphone">
-            <input type="checkbox" id="alert-modal"><label for="alert-modal">Согласие на сбор и обработку личных данных</label>
+            <input type="email" placeholder="Email" class="email" name="form_email">
+            <input type="number" placeholder="Телефон" class="cellphone" name="form_phone">
+            <input type="checkbox" id="alert-modal" name="form_check"><label for="alert-modal">Согласие на сбор и обработку личных данных</label>
             <div class="footer-form-modal">
                 <a href="#alert-success" class="alert">
                     <input type="submit" class="submit-button alert-submit button" value="Дайте знать">
@@ -343,7 +343,7 @@
                 Вы получите уведомление!</p>
             <p>До встречи на бирже!</p>
             <div class="shutdown">
-                <a href="" class="submit-button modal-submit-button button">Закрыть</a>
+                <a href="" class="submit-button modal-submit-button button button-close-f">Закрыть</a>
             </div>
         </div>
     </div>
@@ -362,7 +362,7 @@
                 Вам на почту!</p>
             <p>Совсем скоро Вы сожете начать зарабатывать на нашей бирже!</p>
             <div class="shutdown">
-                <a href="" class="submit-button modal-submit-button button">Закрыть</a>
+                <a href=""  class="submit-button modal-submit-button button button-close-f">Закрыть</a>
             </div>
         </div>
     </div>

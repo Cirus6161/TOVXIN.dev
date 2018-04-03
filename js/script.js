@@ -11,300 +11,294 @@ $(document).ready(function() {
     })
 
 
-
-
-
-
-
-
-function validateEmail(email) {
-    var reg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return reg.test(email);
-}
-
-$(document).ready(function() {
-    $(".registration-button").fancybox();
-    $("#contact").submit(function() { return false; });
-    $('reg-success').submit(function(){
-        $.fancybox.close(true);
-
-        return false;
-    });
-
-    $("#send").on("click", function(){
-        var emailval  = $("#email").val();
-        var msgval    = $("#msg").val();
-        var msglen    = msgval.length;
-        var mailvalid = validateEmail(emailval);
-
-        if(mailvalid == false) {
-            $("#email").addClass("error");
-        }
-        else if(mailvalid == true){
-            $("#email").removeClass("error");
-        }
-
-        if(msglen < 4) {
-            $("#msg").addClass("error");
-        }
-        else if(msglen >= 4){
-            $("#msg").removeClass("error");
-        }
-
-        if(mailvalid == true && msglen >= 4) {
-            // если обе проверки пройдены
-            // сначала мы скрываем кнопку отправки
-            $("#send").replaceWith("<em>отправка...</em>");
-
-            $.ajax({
-                type: 'POST',
-                url: 'sendmessage.php',
-                data: $("#contact").serialize(),
-                success: function(data) {
-                    if(data == "true") {
-                        $("#contact").fadeOut("fast", function(){
-                            $(this).before("<p><strong>Успешно! Ваше сообщение отправлено  :)</strong></p>");
-                            setTimeout("$.fancybox.close()", 1000);
-                        });
-                    }
-                }
-            });
-        }
-    });
-});
-
-
-function validateEmail(email) {
-    var reg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return reg.test(email);
-}
-
-$(document).ready(function() {
-    $(".open-alert").fancybox();
-    $("#contact").submit(function() { return false; });
-    $('reg-success').submit(function(){
-        $.fancybox.close(true);
-
-        return false;
-    });
-
-    $("#send").on("click", function(){
-        var emailval  = $("#email").val();
-        var msgval    = $("#msg").val();
-        var msglen    = msgval.length;
-        var mailvalid = validateEmail(emailval);
-
-        if(mailvalid == false) {
-            $("#email").addClass("error");
-        }
-        else if(mailvalid == true){
-            $("#email").removeClass("error");
-        }
-
-        if(msglen < 4) {
-            $("#msg").addClass("error");
-        }
-        else if(msglen >= 4){
-            $("#msg").removeClass("error");
-        }
-
-        if(mailvalid == true && msglen >= 4) {
-            // если обе проверки пройдены
-            // сначала мы скрываем кнопку отправки
-            $("#send").replaceWith("<em>отправка...</em>");
-
-            $.ajax({
-                type: 'POST',
-                url: 'sendmessage.php',
-                data: $("#contact").serialize(),
-                success: function(data) {
-                    if(data == "true") {
-                        $("#contact").fadeOut("fast", function(){
-                            $(this).before("<p><strong>Успешно! Ваше сообщение отправлено  :)</strong></p>");
-                            setTimeout("$.fancybox.close()", 1000);
-                        });
-                    }
-                }
-            });
-        }
-    });
-});
-
-
-function validateEmail(email) {
-    var reg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return reg.test(email);
-}
-
-$(document).ready(function() {
-    $(".reg-thx").fancybox();
-    $("#contact").submit(function() { return false; });
-    $('reg-success').submit(function(){
-        $.fancybox.close(true);
-
-        return false;
-    });
-
-    $("#send").on("click", function(){
-        var emailval  = $("#email").val();
-        var msgval    = $("#msg").val();
-        var msglen    = msgval.length;
-        var mailvalid = validateEmail(emailval);
-
-        if(mailvalid == false) {
-            $("#email").addClass("error");
-        }
-        else if(mailvalid == true){
-            $("#email").removeClass("error");
-        }
-
-        if(msglen < 4) {
-            $("#msg").addClass("error");
-        }
-        else if(msglen >= 4){
-            $("#msg").removeClass("error");
-        }
-
-        if(mailvalid == true && msglen >= 4) {
-            // если обе проверки пройдены
-            // сначала мы скрываем кнопку отправки
-            $("#send").replaceWith("<em>отправка...</em>");
-
-            $.ajax({
-                type: 'POST',
-                url: 'sendmessage.php',
-                data: $("#contact").serialize(),
-                success: function(data) {
-                    if(data == "true") {
-                        $("#contact").fadeOut("fast", function(){
-                            $(this).before("<p><strong>Успешно! Ваше сообщение отправлено  :)</strong></p>");
-                            setTimeout("$.fancybox.close()", 1000);
-                        });
-                    }
-                }
-            });
-        }
-    });
-});
-
-
-
-
-function validateEmail(email) {
-    var reg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return reg.test(email);
-}
-
-$(document).ready(function() {
-    $(".reg-thx").fancybox();
-    $("#contact").submit(function() { return false; });
-    $('reg-success').submit(function(){
-        $.fancybox.close(true);
-
-        return false;
-    });
-
-    $("#send").on("click", function(){
-        var emailval  = $("#email").val();
-        var msgval    = $("#msg").val();
-        var msglen    = msgval.length;
-        var mailvalid = validateEmail(emailval);
-
-        if(mailvalid == false) {
-            $("#email").addClass("error");
-        }
-        else if(mailvalid == true){
-            $("#email").removeClass("error");
-        }
-
-        if(msglen < 4) {
-            $("#msg").addClass("error");
-        }
-        else if(msglen >= 4){
-            $("#msg").removeClass("error");
-        }
-
-        if(mailvalid == true && msglen >= 4) {
-            // если обе проверки пройдены
-            // сначала мы скрываем кнопку отправки
-            $("#send").replaceWith("<em>отправка...</em>");
-
-            $.ajax({
-                type: 'POST',
-                url: 'sendmessage.php',
-                data: $("#contact").serialize(),
-                success: function(data) {
-                    if(data == "true") {
-                        $("#contact").fadeOut("fast", function(){
-                            $(this).before("<p><strong>Успешно! Ваше сообщение отправлено  :)</strong></p>");
-                            setTimeout("$.fancybox.close()", 1000);
-                        });
-                    }
-                }
-            });
-        }
-    });
-});
-
-
-
-
-
-function validateEmail(email) {
-    var reg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return reg.test(email);
-}
-
-$(document).ready(function() {
-    $(".alert").fancybox();
-    $("#contact").submit(function() { return false; });
-    $('reg-success').submit(function(){
-        $.fancybox.close(true);
-
-        return false;
-    });
-
-    $("#send").on("click", function(){
-        var emailval  = $("#email").val();
-        var msgval    = $("#msg").val();
-        var msglen    = msgval.length;
-        var mailvalid = validateEmail(emailval);
-
-        if(mailvalid == false) {
-            $("#email").addClass("error");
-        }
-        else if(mailvalid == true){
-            $("#email").removeClass("error");
-        }
-
-        if(msglen < 4) {
-            $("#msg").addClass("error");
-        }
-        else if(msglen >= 4){
-            $("#msg").removeClass("error");
-        }
-
-        if(mailvalid == true && msglen >= 4) {
-            // если обе проверки пройдены
-            // сначала мы скрываем кнопку отправки
-            $("#send").replaceWith("<em>отправка...</em>");
-
-            $.ajax({
-                type: 'POST',
-                url: 'sendmessage.php',
-                data: $("#contact").serialize(),
-                success: function(data) {
-                    if(data == "true") {
-                        $("#contact").fadeOut("fast", function(){
-                            $(this).before("<p><strong>Успешно! Ваше сообщение отправлено  :)</strong></p>");
-                            setTimeout("$.fancybox.close()", 1000);
-                        });
-                    }
-                }
-            });
-        }
-    });
-});
+// function validateEmail(email) {
+//     var reg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+//     return reg.test(email);
+// }
+//
+// $(document).ready(function() {
+//     $(".registration-button").fancybox();
+//     $("#contact").submit(function() { return false; });
+//     $('reg-success').submit(function(){
+//         $.fancybox.close(true);
+//
+//         return false;
+//     });
+//
+//     $("#send").on("click", function(){
+//         var emailval  = $("#email").val();
+//         var msgval    = $("#msg").val();
+//         var msglen    = msgval.length;
+//         var mailvalid = validateEmail(emailval);
+//
+//         if(mailvalid == false) {
+//             $("#email").addClass("error");
+//         }
+//         else if(mailvalid == true){
+//             $("#email").removeClass("error");
+//         }
+//
+//         if(msglen < 4) {
+//             $("#msg").addClass("error");
+//         }
+//         else if(msglen >= 4){
+//             $("#msg").removeClass("error");
+//         }
+//
+//         if(mailvalid == true && msglen >= 4) {
+//             // если обе проверки пройдены
+//             // сначала мы скрываем кнопку отправки
+//             $("#send").replaceWith("<em>отправка...</em>");
+//
+//             $.ajax({
+//                 type: 'POST',
+//                 url: 'sendmessage.php',
+//                 data: $("#contact").serialize(),
+//                 success: function(data) {
+//                     if(data == "true") {
+//                         $("#contact").fadeOut("fast", function(){
+//                             $(this).before("<p><strong>Успешно! Ваше сообщение отправлено  :)</strong></p>");
+//                             setTimeout("$.fancybox.close()", 1000);
+//                         });
+//                     }
+//                 }
+//             });
+//         }
+//     });
+// });
+//
+//
+// function validateEmail(email) {
+//     var reg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+//     return reg.test(email);
+// }
+//
+// $(document).ready(function() {
+//     $(".open-alert").fancybox();
+//     $("#contact").submit(function() { return false; });
+//     $('reg-success').submit(function(){
+//         $.fancybox.close(true);
+//
+//         return false;
+//     });
+//
+//     $("#send").on("click", function(){
+//         var emailval  = $("#email").val();
+//         var msgval    = $("#msg").val();
+//         var msglen    = msgval.length;
+//         var mailvalid = validateEmail(emailval);
+//
+//         if(mailvalid == false) {
+//             $("#email").addClass("error");
+//         }
+//         else if(mailvalid == true){
+//             $("#email").removeClass("error");
+//         }
+//
+//         if(msglen < 4) {
+//             $("#msg").addClass("error");
+//         }
+//         else if(msglen >= 4){
+//             $("#msg").removeClass("error");
+//         }
+//
+//         if(mailvalid == true && msglen >= 4) {
+//             // если обе проверки пройдены
+//             // сначала мы скрываем кнопку отправки
+//             $("#send").replaceWith("<em>отправка...</em>");
+//
+//             $.ajax({
+//                 type: 'POST',
+//                 url: 'sendmessage.php',
+//                 data: $("#contact").serialize(),
+//                 success: function(data) {
+//                     if(data == "true") {
+//                         $("#contact").fadeOut("fast", function(){
+//                             $(this).before("<p><strong>Успешно! Ваше сообщение отправлено  :)</strong></p>");
+//                             setTimeout("$.fancybox.close()", 1000);
+//                         });
+//                     }
+//                 }
+//             });
+//         }
+//     });
+// });
+//
+//
+// function validateEmail(email) {
+//     var reg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+//     return reg.test(email);
+// }
+//
+// $(document).ready(function() {
+//     $(".reg-thx").fancybox();
+//     $("#contact").submit(function() { return false; });
+//     $('reg-success').submit(function(){
+//         $.fancybox.close(true);
+//
+//         return false;
+//     });
+//
+//     $("#send").on("click", function(){
+//         var emailval  = $("#email").val();
+//         var msgval    = $("#msg").val();
+//         var msglen    = msgval.length;
+//         var mailvalid = validateEmail(emailval);
+//
+//         if(mailvalid == false) {
+//             $("#email").addClass("error");
+//         }
+//         else if(mailvalid == true){
+//             $("#email").removeClass("error");
+//         }
+//
+//         if(msglen < 4) {
+//             $("#msg").addClass("error");
+//         }
+//         else if(msglen >= 4){
+//             $("#msg").removeClass("error");
+//         }
+//
+//         if(mailvalid == true && msglen >= 4) {
+//             // если обе проверки пройдены
+//             // сначала мы скрываем кнопку отправки
+//             $("#send").replaceWith("<em>отправка...</em>");
+//
+//             $.ajax({
+//                 type: 'POST',
+//                 url: 'sendmessage.php',
+//                 data: $("#contact").serialize(),
+//                 success: function(data) {
+//                     if(data == "true") {
+//                         $("#contact").fadeOut("fast", function(){
+//                             $(this).before("<p><strong>Успешно! Ваше сообщение отправлено  :)</strong></p>");
+//                             setTimeout("$.fancybox.close()", 1000);
+//                         });
+//                     }
+//                 }
+//             });
+//         }
+//     });
+// });
+//
+//
+//
+//
+// function validateEmail(email) {
+//     var reg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+//     return reg.test(email);
+// }
+//
+// $(document).ready(function() {
+//     $(".reg-thx").fancybox();
+//     $("#contact").submit(function() { return false; });
+//     $('reg-success').submit(function(){
+//         $.fancybox.close(true);
+//
+//         return false;
+//     });
+//
+//     $("#send").on("click", function(){
+//         var emailval  = $("#email").val();
+//         var msgval    = $("#msg").val();
+//         var msglen    = msgval.length;
+//         var mailvalid = validateEmail(emailval);
+//
+//         if(mailvalid == false) {
+//             $("#email").addClass("error");
+//         }
+//         else if(mailvalid == true){
+//             $("#email").removeClass("error");
+//         }
+//
+//         if(msglen < 4) {
+//             $("#msg").addClass("error");
+//         }
+//         else if(msglen >= 4){
+//             $("#msg").removeClass("error");
+//         }
+//
+//         if(mailvalid == true && msglen >= 4) {
+//             // если обе проверки пройдены
+//             // сначала мы скрываем кнопку отправки
+//             $("#send").replaceWith("<em>отправка...</em>");
+//
+//             $.ajax({
+//                 type: 'POST',
+//                 url: 'sendmessage.php',
+//                 data: $("#contact").serialize(),
+//                 success: function(data) {
+//                     if(data == "true") {
+//                         $("#contact").fadeOut("fast", function(){
+//                             $(this).before("<p><strong>Успешно! Ваше сообщение отправлено  :)</strong></p>");
+//                             setTimeout("$.fancybox.close()", 1000);
+//                         });
+//                     }
+//                 }
+//             });
+//         }
+//     });
+// });
+//
+//
+//
+//
+//
+// function validateEmail(email) {
+//     var reg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+//     return reg.test(email);
+// }
+//
+// $(document).ready(function() {
+//     $(".alert").fancybox();
+//     $("#contact").submit(function() { return false; });
+//     $('reg-success').submit(function(){
+//         $.fancybox.close(true);
+//
+//         return false;
+//     });
+//
+//     $("#send").on("click", function(){
+//         var emailval  = $("#email").val();
+//         var msgval    = $("#msg").val();
+//         var msglen    = msgval.length;
+//         var mailvalid = validateEmail(emailval);
+//
+//         if(mailvalid == false) {
+//             $("#email").addClass("error");
+//         }
+//         else if(mailvalid == true){
+//             $("#email").removeClass("error");
+//         }
+//
+//         if(msglen < 4) {
+//             $("#msg").addClass("error");
+//         }
+//         else if(msglen >= 4){
+//             $("#msg").removeClass("error");
+//         }
+//
+//         if(mailvalid == true && msglen >= 4) {
+//             // если обе проверки пройдены
+//             // сначала мы скрываем кнопку отправки
+//             $("#send").replaceWith("<em>отправка...</em>");
+//
+//             $.ajax({
+//                 type: 'POST',
+//                 url: 'sendmessage.php',
+//                 data: $("#contact").serialize(),
+//                 success: function(data) {
+//                     if(data == "true") {
+//                         $("#contact").fadeOut("fast", function(){
+//                             $(this).before("<p><strong>Успешно! Ваше сообщение отправлено  :)</strong></p>");
+//                             setTimeout("$.fancybox.close()", 1000);
+//                         });
+//                     }
+//                 }
+//             });
+//         }
+//     });
+// });
 
 
 $(document).ready(function(){
@@ -338,8 +332,28 @@ $(function () {
 
 $(function () {
 
-    $("#js-register-form").validate({
+    $('#reg-modal').fancybox();
+    $('#reg-success').fancybox();
+    $('.alert-modal').fancybox();
+    $('#alert-success').fancybox();
 
+    $('.button-close-f').on('click', function (e) {
+        e.preventDefault();
+        setTimeout(function (e) {
+            $.fancybox.close();
+        }, 1);
+    });
+
+    $('.button-reg').on('click', function (e) {
+        $.fancybox.open('#reg');
+    });
+
+    $('#button-open-alert').on('click', function (e) {
+        $.fancybox.open('#alert');
+    });
+
+
+    $("#js-register-form").validate({
        rules: {
            form_email:{
                required: true,
@@ -352,18 +366,94 @@ $(function () {
                required: true
            }
        },
+
         submitHandler: function(form){
             $.ajax({
                 url: "mail.php",
                 type: "POST",
-                data: $(this).serialize(),
+                data: $(form).serializeArray(),
                 success: function (response) {
-                    alert("спасибо")
+                    $.fancybox.open("#reg-success");
                 }
             })
         }
 
     });
+
+
+
+    $("#reg").validate({
+        debug: true,
+        rules: {
+            form_email:{
+                required: true,
+                email: true
+            },
+            form_phone:{
+                required: true,
+            },
+            form_check:{
+                required: true
+            }
+        },
+        submitHandler: function(form){
+            console.log(form);
+            $.ajax({
+                url: "mail.php",
+                type: "POST",
+                data: $(form).serializeArray(),
+                success: function (response) {
+                    $.fancybox.open("#reg-success");
+                }
+            })
+        }
+
+    });
+
+
+
+
+
+
+
+    $("#alert").validate({
+        debug: true,
+        rules: {
+            form_email:{
+                required: true,
+                email: true
+            },
+            form_phone:{
+                required: true,
+            },
+            form_check:{
+                required: true
+            }
+        },
+        submitHandler: function(form){
+            console.log(form);
+            $.ajax({
+                url: "mail.php",
+                type: "POST",
+                data: $(form).serializeArray(),
+                success: function (response) {
+                    $.fancybox.open("#alert-success");
+                }
+            })
+        }
+
+    });
+
+
+
+
+
+
+
+
+
+
+
 
 
 });
